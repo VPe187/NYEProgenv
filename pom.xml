@@ -40,6 +40,12 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+			<scope>runtime</scope>
+			<optional>true</optional>
+		</dependency>
 
 		<dependency>
 			<groupId>com.h2database</groupId>
@@ -73,6 +79,7 @@
 			<version>3.0.1</version>
 			<scope>runtime</scope>
 		</dependency>
+
 		<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
 		<dependency>
 			<groupId>mysql</groupId>
@@ -85,6 +92,39 @@
 	<build>
 
 		<plugins>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-antrun-plugin</artifactId>
+				<version>1.5</version>
+				<executions>
+					<execution>
+						<id>exec-gen-sources</id>
+						<phase>generate-sources</phase>
+						<configuration>
+							<target name="Build Web">
+
+								<exec executable="cmd" dir="${project.basedir}/src/main/frontend"
+									  failonerror="true" osfamily="windows">
+									<arg line="/c npm install" />
+								</exec>
+
+								<exec executable="cmd" dir="${project.basedir}/src/main/frontend"
+									  failonerror="true" osfamily="windows">
+									<arg line="/c npm run build" />
+								</exec>
+
+
+							</target>
+						</configuration>
+						<goals>
+							<goal>run</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+
+
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
