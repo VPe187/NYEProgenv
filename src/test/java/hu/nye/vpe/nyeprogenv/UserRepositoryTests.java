@@ -34,6 +34,7 @@ public class UserRepositoryTests {
         user.setPassword(PASSWORD);
         user.setFirstName(FIRST_NAME);
         user.setLastName(LAST_NAME);
+        user.setEnabled(true);
         // Given
         User savedUser = userRepository.save(user);
         // Then
@@ -49,6 +50,7 @@ public class UserRepositoryTests {
         user2.setPassword(PASSWORD);
         user2.setFirstName(FIRST_NAME);
         user2.setLastName(LAST_NAME);
+        user2.setEnabled(true);
         // Given
         User savedUser2 = userRepository.save(user2);
         // Then
