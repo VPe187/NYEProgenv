@@ -18,6 +18,7 @@
                 <th>Email</th>
                 <th>Vezetéknév</th>
                 <th>Keresztnév</th>
+                <th>Engedélyezve</th>
                 <th>Műveletek</th>
             </tr>
             </thead>
@@ -28,6 +29,7 @@
                     <td>[[${user.email}]]</td>
                     <td>[[${user.lastName}]]</td>
                     <td>[[${user.firstName}]]</td>
+                    <td>[[${user.enabled}]]</td>
                     <td>
                         <a th:href="@{'/users/edit/' + ${user.id}}">Szerkesztés</a>
                         <a th:href="@{'/users/delete/' + ${user.id}}">Törlés</a>
