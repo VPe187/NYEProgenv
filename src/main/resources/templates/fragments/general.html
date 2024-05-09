@@ -1,11 +1,19 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+    <html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8" />
+    </head>
     <body>
+
         <!-- navbar -->
         <div th:fragment="navbar" class="flex border w-full h-10 bg-gray-100 m-0 p-0 items-center space-x-10 drop-shadow">
             <div class="text-xl font-bold ml-2">NYEProgENV - VPe </div>
             <div><a href="/">Nyitó</a></div>
             <div><a href="/users">Felhasználók</a></div>
         </div>
+
+        <!-- content -->
+        <div th:fragment="content"></div>
+
     </body>
 </html>
