@@ -13,6 +13,9 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 
+/**
+ * Spring boot web security configuration class.
+ */
 @Configuration
 @EnableWebSecurity
 public class WebSecurityConfig {
@@ -20,17 +23,25 @@ public class WebSecurityConfig {
     @Autowired
     private CustomUserDetailsService userDetailsService;
 
+    /**
+     * Protect paths.
+     *
+     * @param http
+     *
+     * @return Builded HtmlCode
+     *
+     */
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
                 .authorizeHttpRequests(authorizeRequests -> authorizeRequests
-                        .requestMatchers("/", "/register", "/login", "/resources/**", "/static/**", "/css/**", "/js/**", "/images/**").permitAll()
-                        .anyRequest().authenticated()
+                        .requestMatchers("/","/loginform", "/register", "/resources/**", "/static/**", "/css/**", "/js/**", "/images/**")
+                                .permitAll().anyRequest().authenticated()
                 )
                 .formLogin(formLogin -> formLogin
-                        .loginPage("/login")
+                        .loginPage("/loginform")
                         .permitAll()
-                        .defaultSuccessUrl("/", true)
+                        .defaultSuccessUrl("/users", true)
                 )
                 .logout(logout -> logout
                         .permitAll()

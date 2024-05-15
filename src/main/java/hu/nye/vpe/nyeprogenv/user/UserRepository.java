@@ -8,8 +8,8 @@ import org.springframework.data.jpa.repository.Query;
  */
 public interface UserRepository extends JpaRepository<User, Integer> {
 
-    //@Query("SELECT u FROM User u WHERE u.email = ?1")
     Long countById(final Integer id);
+
     User findByEmail(final String email);
 
 }

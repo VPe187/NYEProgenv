@@ -1,4 +1,4 @@
-package hu.nye.vpe.nyeprogenv.user;
+package hu.nye.vpe.nyeprogenv.user.exceptions;
 
 /**
  * Class UserNotFoundException.

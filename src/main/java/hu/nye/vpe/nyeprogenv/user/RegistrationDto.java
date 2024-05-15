@@ -1,5 +1,8 @@
 package hu.nye.vpe.nyeprogenv.user;
 
+/**
+ * Registration Data Transfer Object class.
+ */
 public class RegistrationDto {
     private String email;
     private String password;

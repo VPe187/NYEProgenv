@@ -1,7 +1,11 @@
 package hu.nye.vpe.nyeprogenv.user;
 
+import java.util.Set;
+
 import jakarta.persistence.Column;
+import jakarta.persistence.ElementCollection;
 import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
@@ -20,7 +24,7 @@ public class User {
     @Column(nullable = false, unique = true, length = 80)
     private String email;
 
-    @Column(nullable = false, length = 15)
+    @Column(nullable = false, length = 60)
     private String password;
 
     @Column(nullable = false, length = 50, name = "first_name")
@@ -31,6 +35,9 @@ public class User {
 
     @Column(nullable = false, name = "enabled")
     private boolean enabled;
+
+    @ElementCollection(fetch = FetchType.EAGER)
+    private Set<String> roles;
 
     public Long getId() {
         return id;
@@ -78,5 +85,12 @@ public class User {
 
     public void setEnabled(boolean enabled) {
         this.enabled = enabled;
+    }
+
+    public Set<String> getRoles() {
+        return roles;
+    }
+    public void setRoles(Set<String> roles) {
+        this.roles = roles;
     }
 }

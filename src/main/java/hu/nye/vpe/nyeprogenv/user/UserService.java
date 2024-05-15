@@ -3,6 +3,7 @@ package hu.nye.vpe.nyeprogenv.user;
 import java.util.List;
 import java.util.Optional;
 
+import hu.nye.vpe.nyeprogenv.user.exceptions.UserNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -36,7 +37,6 @@ public class UserService {
             return result.get();
         }
         throw new UserNotFoundException("Could not find any users with this ID " + id);
-
     }
 
     /**

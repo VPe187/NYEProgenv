@@ -2,6 +2,7 @@ package hu.nye.vpe.nyeprogenv.user;
 
 import java.util.List;
 
+import hu.nye.vpe.nyeprogenv.user.exceptions.UserNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -103,12 +104,5 @@ public class UserController {
 
         }
         return "redirect:/users";
-    }
-
-    @GetMapping("/register")
-    public String showRegistrationForm(Model model) {
-        model.addAttribute("user", new User());
-        model.addAttribute("pageTitle", "Fiók létrehozás");
-        return "signup_form";
     }
 }
