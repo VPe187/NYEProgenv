@@ -94,7 +94,7 @@ public class UserController {
      * @return redirect
      */
     @GetMapping("/users/delete/{id}")
-    public String delteUser(@PathVariable int id, RedirectAttributes ra) {
+    public String deleteUser(@PathVariable int id, RedirectAttributes ra) {
         try {
             userService.delete(id);
             ra.addFlashAttribute("message", "A felhasználó sikeresen törölve (ID: " + id + ")");
@@ -105,4 +105,10 @@ public class UserController {
         return "redirect:/users";
     }
 
+    @GetMapping("/register")
+    public String showRegistrationForm(Model model) {
+        model.addAttribute("user", new User());
+        model.addAttribute("pageTitle", "Fiók létrehozás");
+        return "signup_form";
+    }
 }

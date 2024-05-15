@@ -5,8 +5,8 @@
 </head>
 <body>
     <section layout:fragment="content">
-        <p>[[${pageTitle}]]</p>
-        <div class="w-full max-w-xs">
+        <div class="w-full">
+            <h1 class="font-bold text-2xl">Felhasználó szerkesztés ([[*{id}]])</h1>
             <form th:action="@{/users/save}" method="post" th:object="${user}" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
 
                 <input type="hidden" th:field="*{id}">
@@ -32,7 +32,7 @@
                 </div>
 
                 <div class="mb-4">
-                    <label class="block text-gray-700 text-sm font-bold mb-2">Enabled</label>
+                    <label class="block text-gray-700 text-sm font-bold mb-2">Aktív</label>
                     <input type="checkbox" th:field="*{enabled}">
                 </div>
 
