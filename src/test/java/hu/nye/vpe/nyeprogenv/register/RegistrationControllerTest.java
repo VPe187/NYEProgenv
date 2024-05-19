@@ -1,5 +1,7 @@
 package hu.nye.vpe.nyeprogenv.register;
 
+import java.util.Optional;
+
 import hu.nye.vpe.nyeprogenv.user.User;
 import hu.nye.vpe.nyeprogenv.user.UserRepository;
 import org.junit.jupiter.api.BeforeEach;
@@ -9,16 +11,18 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.ui.Model;
-import org.springframework.validation.BindingResult;
-import org.springframework.web.servlet.mvc.support.RedirectAttributes;
-
-import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.ArgumentMatchers.anyString;
 import static org.mockito.Mockito.*;
 
 public class RegistrationControllerTest {
+
+    private final String EMAIL = "email@email.com";
+    private final String PASSWORD = "0123456789";
+    private final String FIRSTNAME = "Peter";
+    private final String LASTNAME = "Pellegrini";
+
 
     @Mock
     private UserRepository userRepository;
@@ -28,9 +32,6 @@ public class RegistrationControllerTest {
 
     @Mock
     private Model model;
-
-    @Mock
-    private BindingResult bindingResult;
 
     @InjectMocks
     private RegistrationController registrationController;
@@ -51,10 +52,10 @@ public class RegistrationControllerTest {
     @Test
     public void testRegisterUserAccount_Success() {
         RegistrationDto registrationDto = new RegistrationDto();
-        registrationDto.setEmail("test@example.com");
-        registrationDto.setPassword("password");
-        registrationDto.setFirstName("Test");
-        registrationDto.setLastName("User");
+        registrationDto.setEmail(EMAIL);
+        registrationDto.setPassword(PASSWORD);
+        registrationDto.setFirstName(FIRSTNAME);
+        registrationDto.setLastName(LASTNAME);
 
         when(userRepository.findByEmail(anyString())).thenReturn(Optional.empty());
         when(passwordEncoder.encode(anyString())).thenReturn("encodedPassword");

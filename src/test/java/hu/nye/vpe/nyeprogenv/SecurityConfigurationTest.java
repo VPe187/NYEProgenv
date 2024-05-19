@@ -18,10 +18,7 @@ import org.springframework.security.web.SecurityFilterChain;
  */
 @Configuration
 @EnableWebSecurity
-public class SecurityConfiguration {
-
-    @Autowired
-    private CustomUserDetailsService userDetailsService;
+public class SecurityConfigurationTest {
 
     /**
      * HTTP Security.
@@ -34,36 +31,9 @@ public class SecurityConfiguration {
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity httpSecurity) throws Exception {
         return httpSecurity.authorizeHttpRequests(registry -> {
-                    registry.requestMatchers("/").permitAll();
-                    registry.requestMatchers("/register/**").permitAll();
-                    registry.requestMatchers("/login/**").permitAll();
-                    registry.requestMatchers("/logout/**").permitAll();
-                    registry.anyRequest().authenticated();
-                })
-                .formLogin(httpSecurityFormLoginConfigurer -> {
-                    httpSecurityFormLoginConfigurer
-                            .loginPage("/login")
-                            .permitAll();
-                })
-                .build();
-    }
-
-    @Bean
-    public UserDetailsService userDetailsService() {
-        return userDetailsService;
-    }
-
-    /**
-     * Authentication provider method.
-     *
-     * @return AuthenticationProvider
-     */
-    @Bean
-    public AuthenticationProvider authenticationProvider() {
-        DaoAuthenticationProvider provider = new DaoAuthenticationProvider();
-        provider.setUserDetailsService(userDetailsService);
-        provider.setPasswordEncoder(passwordEncoder());
-        return provider;
+            registry.requestMatchers("*");
+            registry.anyRequest().permitAll();
+        }).build();
     }
 
     @Bean
