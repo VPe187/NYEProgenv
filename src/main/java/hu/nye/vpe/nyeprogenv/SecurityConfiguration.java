@@ -8,12 +8,14 @@ import org.springframework.security.authentication.AuthenticationProvider;
 import org.springframework.security.authentication.dao.DaoAuthenticationProvider;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
-import org.springframework.security.config.annotation.web.configurers.AbstractAuthenticationFilterConfigurer;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 
+/**
+ * Security Configuration class.
+ */
 @Configuration
 @EnableWebSecurity
 public class SecurityConfiguration {
@@ -21,19 +23,40 @@ public class SecurityConfiguration {
     @Autowired
     private CustomUserDetailsService userDetailsService;
 
+    /**
+     * HTTP Security.
+     *
+     * @param httpSecurity
+     *
+     * @return SecurityFilterChain
+     *
+     * @throws Exception (Exception)
+     */
     @Bean
-    public SecurityFilterChain securityFilterChain (HttpSecurity httpSecurity) throws Exception {
-        return httpSecurity.authorizeHttpRequests(registry->{
+    public SecurityFilterChain securityFilterChain(HttpSecurity httpSecurity) throws Exception {
+        return httpSecurity.authorizeHttpRequests(registry -> {
             registry.requestMatchers("/").permitAll();
             registry.requestMatchers("/register/**").permitAll();
             registry.requestMatchers("/login/**").permitAll();
+            registry.requestMatchers("/logout/**").permitAll();
             registry.anyRequest().authenticated();
         })
-            //.formLogin(AbstractAuthenticationFilterConfigurer::permitAll)
-                .formLogin(form->{
-                    form.loginPage("/login").permitAll();
-                })
-                .build();
+        .formLogin(httpSecurityFormLoginConfigurer -> {
+            httpSecurityFormLoginConfigurer
+                .loginPage("/login")
+                .permitAll();
+        })
+        /*
+        .logout(httpSecurityLogoutConfigurer -> {
+            httpSecurityLogoutConfigurer
+                .logoutSuccessUrl("/")
+                .permitAll()
+                .invalidateHttpSession(true)
+                .deleteCookies("JSESSIONID");;
+        }
+        )
+         */
+        .build();
     }
 
     @Bean
@@ -41,6 +64,11 @@ public class SecurityConfiguration {
         return userDetailsService;
     }
 
+    /**
+     * Authentication provider method.
+     *
+     * @return AuthenticationProvider
+     */
     @Bean
     public AuthenticationProvider authenticationProvider() {
         DaoAuthenticationProvider provider = new DaoAuthenticationProvider();

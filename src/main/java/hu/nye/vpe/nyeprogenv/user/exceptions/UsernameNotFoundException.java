@@ -10,7 +10,7 @@ public class UsernameNotFoundException extends Throwable {
      *
      * @param message is an exception message.
      */
-    public UsernameNotFoundException (String message) {
+    public UsernameNotFoundException(String message) {
         super(message);
     }
 }

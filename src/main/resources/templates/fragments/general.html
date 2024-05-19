@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-    <html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.w3.org/1999/xhtml">
     <head>
         <meta charset="UTF-8" />
     </head>
@@ -10,8 +10,19 @@
             <div class="text-xl font-bold ml-2">NYEProgENV - VPe </div>
             <div><a href="/">Nyitó</a></div>
             <div><a href="/users">Felhasználók</a></div>
-            <div><a href="/register">Regisztráció</a></div>
-            <div><a href="/login">Belépés</a></div>
+
+            <div sec:authorize="isAnonymous()"><a href="/register">Regisztráció</a></div>
+            <div sec:authorize="isAnonymous()"><a href="/login">Belépés</a></div>
+
+            <div sec:authorize="isAuthenticated()">
+                <form th:action="@{/logout}" method="post" style="display: inline;">
+                        <button type="submit" >Kilépés</button>
+                </form>
+            </div>
+
+            <div sec:authorize="isAuthenticated()">
+                <div sec:authentication="name"></div>
+            </div>
         </div>
 
         <!-- content -->
