@@ -1,7 +1,9 @@
-package hu.nye.vpe.nyeprogenv.user;
+package hu.nye.vpe.nyeprogenv.register;
 
 import java.util.Optional;
 
+import hu.nye.vpe.nyeprogenv.user.User;
+import hu.nye.vpe.nyeprogenv.user.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Controller;
@@ -45,7 +47,7 @@ public class RegistrationController {
     @PostMapping("/register")
     public String registerUserAccount(@ModelAttribute("user") RegistrationDto registrationDto) {
         Optional<User> existingUser = userRepository.findByEmail(registrationDto.getEmail());
-        if (existingUser != null) {
+        if (existingUser.isPresent()) {
             return "redirect:/register?error";
         }
         User user = new User();

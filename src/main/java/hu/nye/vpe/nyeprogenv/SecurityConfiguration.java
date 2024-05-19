@@ -29,34 +29,33 @@ public class SecurityConfiguration {
      * @param httpSecurity
      *
      * @return SecurityFilterChain
-     *
      * @throws Exception (Exception)
      */
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity httpSecurity) throws Exception {
         return httpSecurity.authorizeHttpRequests(registry -> {
-            registry.requestMatchers("/").permitAll();
-            registry.requestMatchers("/register/**").permitAll();
-            registry.requestMatchers("/login/**").permitAll();
-            registry.requestMatchers("/logout/**").permitAll();
-            registry.anyRequest().authenticated();
-        })
-        .formLogin(httpSecurityFormLoginConfigurer -> {
-            httpSecurityFormLoginConfigurer
-                .loginPage("/login")
-                .permitAll();
-        })
-        /*
-        .logout(httpSecurityLogoutConfigurer -> {
-            httpSecurityLogoutConfigurer
-                .logoutSuccessUrl("/")
-                .permitAll()
-                .invalidateHttpSession(true)
-                .deleteCookies("JSESSIONID");;
-        }
-        )
-         */
-        .build();
+                    registry.requestMatchers("/").permitAll();
+                    registry.requestMatchers("/register/**").permitAll();
+                    registry.requestMatchers("/login/**").permitAll();
+                    registry.requestMatchers("/logout/**").permitAll();
+                    registry.anyRequest().authenticated();
+                })
+                .formLogin(httpSecurityFormLoginConfigurer -> {
+                    httpSecurityFormLoginConfigurer
+                            .loginPage("/login")
+                            .permitAll();
+                })
+                /*
+                .logout(httpSecurityLogoutConfigurer -> {
+                    httpSecurityLogoutConfigurer
+                        .logoutSuccessUrl("/")
+                        .permitAll()
+                        .invalidateHttpSession(true)
+                        .deleteCookies("JSESSIONID");;
+                }
+                )
+                 */
+                .build();
     }
 
     @Bean

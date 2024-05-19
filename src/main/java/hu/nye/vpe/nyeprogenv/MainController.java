@@ -6,12 +6,13 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
 /**
-/* Main controller.
-**/
+ * /* Main controller.
+ **/
 @Controller
 public class MainController {
 
-    @Autowired private UserService userService;
+    @Autowired
+    private UserService userService;
 
     @GetMapping("")
     public String showMain() {

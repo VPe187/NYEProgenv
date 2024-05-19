@@ -8,9 +8,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  */
 @SpringBootApplication
 public class NyeProgenvApplication {
-
     public static void main(String[] args) {
         SpringApplication.run(NyeProgenvApplication.class, args);
     }
-
 }

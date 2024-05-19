@@ -30,7 +30,6 @@ public class UserController {
      * Method showUserList.
      *
      * @param model as Model
-     *
      * @return users
      */
     @GetMapping("/users")
@@ -44,7 +43,6 @@ public class UserController {
      * Method showNewUserForm.
      *
      * @param model as Model
-     *
      * @return users
      */
     @GetMapping("/users/new")
@@ -86,7 +84,7 @@ public class UserController {
             model.addAttribute("user", user);
             model.addAttribute("pageTitle", "Felhasználó szerkesztése (ID: " + id + ")");
             return "user_form";
-        }  catch (UserNotFoundException e) {
+        } catch (UserNotFoundException e) {
             ra.addFlashAttribute("message", e.getMessage());
             return "redirect:/users";
         }

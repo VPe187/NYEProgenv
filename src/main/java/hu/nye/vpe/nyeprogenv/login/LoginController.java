@@ -1,4 +1,4 @@
-package hu.nye.vpe.nyeprogenv.user;
+package hu.nye.vpe.nyeprogenv.login;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

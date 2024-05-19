@@ -1,11 +1,8 @@
-package hu.nye.vpe.nyeprogenv;
+package hu.nye.vpe.nyeprogenv.user;
 
 import java.util.Arrays;
 import java.util.List;
 
-import hu.nye.vpe.nyeprogenv.user.User;
-import hu.nye.vpe.nyeprogenv.user.UserRepository;
-import hu.nye.vpe.nyeprogenv.user.UserService;
 import hu.nye.vpe.nyeprogenv.user.exceptions.UserNotFoundException;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -14,6 +11,7 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
@@ -76,13 +74,36 @@ public class UserServiceTest {
     @Test
     public void testDeleteUser() throws UserNotFoundException {
         // Given
-        User user = new User();
+        long userId = 1L;
 
         // When
-        when(userRepository.findById(1L)).thenReturn(java.util.Optional.of(user));
+        when(userRepository.countById(userId)).thenReturn(1L);
         userService.delete(1L);
 
         // Then
         verify(userRepository).deleteById(1L);
+    }
+
+    @Test
+    public void testDeleteUserNotFound() {
+        // Given
+        long userId = 1L;
+
+        // When
+        when(userRepository.countById(userId)).thenReturn(0L);
+
+        // Then
+        assertThrows(UserNotFoundException.class, () -> userService.delete(userId));
+    }
+
+    @Test
+    public void testGetUserNotFound() {
+        // Given
+
+        // When
+        when(userRepository.findById(1L)).thenReturn(java.util.Optional.empty());
+
+        // Then
+        assertThrows(UserNotFoundException.class, () -> userService.getUser(1L));
     }
 }

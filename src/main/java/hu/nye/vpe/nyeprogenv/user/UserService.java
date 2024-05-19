@@ -12,7 +12,8 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class UserService {
-    @Autowired private UserRepository userRepository;
+    @Autowired
+    private UserRepository userRepository;
 
     public List<User> listAll() {
         return (List<User>) userRepository.findAll();
@@ -28,7 +29,6 @@ public class UserService {
      * @param id
      *
      * @return user
-     *
      * @throws UserNotFoundException is user not found exception
      */
     public User getUser(final long id) throws UserNotFoundException {
