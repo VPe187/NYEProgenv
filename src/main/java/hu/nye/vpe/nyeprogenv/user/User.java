@@ -18,7 +18,7 @@ import jakarta.persistence.Table;
 @Table(name = "users")
 public class User {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
     @Column(nullable = false, unique = true, length = 80)
@@ -35,9 +35,6 @@ public class User {
 
     @Column(nullable = false, name = "enabled")
     private boolean enabled;
-
-    @ElementCollection(fetch = FetchType.EAGER)
-    private Set<String> roles;
 
     public Long getId() {
         return id;
@@ -87,10 +84,4 @@ public class User {
         this.enabled = enabled;
     }
 
-    public Set<String> getRoles() {
-        return roles;
-    }
-    public void setRoles(Set<String> roles) {
-        this.roles = roles;
-    }
 }

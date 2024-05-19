@@ -8,6 +8,7 @@ public class RegistrationDto {
     private String password;
     private String firstName;
     private String lastName;
+    private Boolean enabled;
 
     // Getters and setters
     public String getEmail() {
@@ -40,5 +41,13 @@ public class RegistrationDto {
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
+    }
+
+    public Boolean getEnabled() {
+        return enabled;
+    }
+
+    public void setEnabled(Boolean enabled) {
+        this.enabled = enabled;
     }
 }

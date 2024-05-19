@@ -1,15 +1,16 @@
 package hu.nye.vpe.nyeprogenv.user;
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.jpa.repository.Query;
+
+import java.util.Optional;
 
 /**
  * User Repository.
  */
-public interface UserRepository extends JpaRepository<User, Integer> {
+public interface UserRepository extends JpaRepository<User, Long> {
 
-    Long countById(final Integer id);
+    Long countById(final Long id);
 
-    User findByEmail(final String email);
+    Optional<User> findByEmail(final String email);
 
 }

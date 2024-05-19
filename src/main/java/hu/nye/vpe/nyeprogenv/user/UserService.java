@@ -31,7 +31,7 @@ public class UserService {
      *
      * @throws UserNotFoundException is user not found exception
      */
-    public User getUser(final int id) throws UserNotFoundException {
+    public User getUser(final long id) throws UserNotFoundException {
         Optional<User> result = userRepository.findById(id);
         if (result.isPresent()) {
             return result.get();
@@ -46,7 +46,7 @@ public class UserService {
      *
      * @throws UserNotFoundException is not found exception
      */
-    public void delete(final int id) throws UserNotFoundException {
+    public void delete(final long id) throws UserNotFoundException {
         Long count = userRepository.countById(id);
         if (count == null || count == 0) {
             throw new UserNotFoundException("Could not find any users with this ID " + id);

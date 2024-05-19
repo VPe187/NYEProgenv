@@ -18,8 +18,8 @@ import java.util.Optional;
 public class UserRepositoryTests {
     @Autowired private UserRepository userRepository;
 
-    private final int USER_ID_1 = 1;
-    private final int USER_ID_2 = 2;
+    private final long USER_ID_1 = 1;
+    private final long USER_ID_2 = 2;
     private final String EMAIL_1 = "vpe@integra.hu";
     private final String EMAIL_2 = "vpe187@gmail.com";
     private final String PASSWORD = "vpe187";

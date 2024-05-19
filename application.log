@@ -1,0 +1,1042 @@
+2024-05-19T16:27:35.865+02:00  INFO 24336 --- [NYEProgenv] [restartedMain] h.n.v.nyeprogenv.NyeProgenvApplication   : Starting NyeProgenvApplication using Java 19.0.1 with PID 24336 (D:\Development\Java\NYEProgenv\target\classes started by VPe in D:\Development\Java\NYEProgenv)
+2024-05-19T16:27:35.865+02:00  INFO 24336 --- [NYEProgenv] [restartedMain] h.n.v.nyeprogenv.NyeProgenvApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-05-19T16:27:35.931+02:00  INFO 24336 --- [NYEProgenv] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-19T16:27:35.932+02:00  INFO 24336 --- [NYEProgenv] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-05-19T16:27:35.934+02:00  INFO 24336 --- [NYEProgenv] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface hu.nye.vpe.nyeprogenv.user.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-05-19T16:27:35.934+02:00  INFO 24336 --- [NYEProgenv] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JDBC repository interfaces.
+2024-05-19T16:27:35.935+02:00  INFO 24336 --- [NYEProgenv] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-19T16:27:35.935+02:00  INFO 24336 --- [NYEProgenv] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-19T16:27:35.938+02:00  INFO 24336 --- [NYEProgenv] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 1 JPA repository interface.
+2024-05-19T16:27:35.977+02:00  INFO 24336 --- [NYEProgenv] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-19T16:27:35.978+02:00  INFO 24336 --- [NYEProgenv] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-19T16:27:35.978+02:00  INFO 24336 --- [NYEProgenv] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-05-19T16:27:35.993+02:00  INFO 24336 --- [NYEProgenv] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-05-19T16:27:35.993+02:00  INFO 24336 --- [NYEProgenv] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 127 ms
+2024-05-19T16:27:36.009+02:00  INFO 24336 --- [NYEProgenv] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-19T16:27:36.010+02:00  INFO 24336 --- [NYEProgenv] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-19T16:27:36.012+02:00  INFO 24336 --- [NYEProgenv] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-19T16:27:36.012+02:00  INFO 24336 --- [NYEProgenv] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Starting...
+2024-05-19T16:27:36.022+02:00  INFO 24336 --- [NYEProgenv] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-14 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6ae3e097
+2024-05-19T16:27:36.022+02:00  INFO 24336 --- [NYEProgenv] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Start completed.
+2024-05-19T16:27:36.038+02:00  INFO 24336 --- [NYEProgenv] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-19T16:27:36.048+02:00  INFO 24336 --- [NYEProgenv] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-19T16:27:36.077+02:00  WARN 24336 --- [NYEProgenv] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'registrationController': Unsatisfied dependency expressed through field 'passwordEncoder': No qualifying bean of type 'org.springframework.security.crypto.password.PasswordEncoder' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2024-05-19T16:27:36.077+02:00  INFO 24336 --- [NYEProgenv] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-19T16:27:36.077+02:00  INFO 24336 --- [NYEProgenv] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Shutdown initiated...
+2024-05-19T16:27:36.079+02:00  INFO 24336 --- [NYEProgenv] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Shutdown completed.
+2024-05-19T16:27:36.079+02:00  INFO 24336 --- [NYEProgenv] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-05-19T16:27:36.084+02:00  INFO 24336 --- [NYEProgenv] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-05-19T16:27:36.086+02:00 ERROR 24336 --- [NYEProgenv] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field passwordEncoder in hu.nye.vpe.nyeprogenv.user.RegistrationController required a bean of type 'org.springframework.security.crypto.password.PasswordEncoder' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.security.crypto.password.PasswordEncoder' in your configuration.
+
+2024-05-19T16:28:01.815+02:00  INFO 8324 --- [NYEProgenv] [restartedMain] h.n.v.nyeprogenv.NyeProgenvApplication   : Starting NyeProgenvApplication using Java 19.0.1 with PID 8324 (D:\Development\Java\NYEProgenv\target\classes started by VPe in D:\Development\Java\NYEProgenv)
+2024-05-19T16:28:01.816+02:00  INFO 8324 --- [NYEProgenv] [restartedMain] h.n.v.nyeprogenv.NyeProgenvApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-05-19T16:28:01.945+02:00  INFO 8324 --- [NYEProgenv] [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\VPe\.m2\repository\com\sun\xml\bind\jaxb-impl\3.0.1\jaxb-impl-3.0.1.jar referenced one or more files that do not exist: file:/C:/Users/VPe/.m2/repository/com/sun/xml/bind/jaxb-impl/3.0.1/jaxb-core.jar
+2024-05-19T16:28:01.946+02:00  INFO 8324 --- [NYEProgenv] [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\VPe\.m2\repository\com\sun\xml\bind\jaxb-core\4.0.5\jaxb-core-4.0.5.jar referenced one or more files that do not exist: file:/C:/Users/VPe/.m2/repository/com/sun/xml/bind/jaxb-core/4.0.5/jakarta.activation-api.jar,file:/C:/Users/VPe/.m2/repository/com/sun/xml/bind/jaxb-core/4.0.5/jakarta.xml.bind-api.jar
+2024-05-19T16:28:01.946+02:00  INFO 8324 --- [NYEProgenv] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-05-19T16:28:01.946+02:00  INFO 8324 --- [NYEProgenv] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-05-19T16:28:02.296+02:00  INFO 8324 --- [NYEProgenv] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-19T16:28:02.297+02:00  INFO 8324 --- [NYEProgenv] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-05-19T16:28:02.314+02:00  INFO 8324 --- [NYEProgenv] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface hu.nye.vpe.nyeprogenv.user.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-05-19T16:28:02.314+02:00  INFO 8324 --- [NYEProgenv] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 0 JDBC repository interfaces.
+2024-05-19T16:28:02.320+02:00  INFO 8324 --- [NYEProgenv] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-19T16:28:02.320+02:00  INFO 8324 --- [NYEProgenv] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-19T16:28:02.332+02:00  INFO 8324 --- [NYEProgenv] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 1 JPA repository interface.
+2024-05-19T16:28:02.651+02:00  INFO 8324 --- [NYEProgenv] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-19T16:28:02.658+02:00  INFO 8324 --- [NYEProgenv] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-19T16:28:02.658+02:00  INFO 8324 --- [NYEProgenv] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-05-19T16:28:02.691+02:00  INFO 8324 --- [NYEProgenv] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-19T16:28:02.691+02:00  INFO 8324 --- [NYEProgenv] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 745 ms
+2024-05-19T16:28:02.779+02:00  INFO 8324 --- [NYEProgenv] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-19T16:28:02.804+02:00  INFO 8324 --- [NYEProgenv] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-19T16:28:02.820+02:00  INFO 8324 --- [NYEProgenv] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-19T16:28:02.939+02:00  INFO 8324 --- [NYEProgenv] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-19T16:28:02.952+02:00  INFO 8324 --- [NYEProgenv] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-19T16:28:03.096+02:00  INFO 8324 --- [NYEProgenv] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@abcf62d
+2024-05-19T16:28:03.097+02:00  INFO 8324 --- [NYEProgenv] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-19T16:28:03.578+02:00  INFO 8324 --- [NYEProgenv] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-19T16:28:03.609+02:00  INFO 8324 --- [NYEProgenv] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-19T16:28:03.754+02:00  WARN 8324 --- [NYEProgenv] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'registrationController': Unsatisfied dependency expressed through field 'passwordEncoder': No qualifying bean of type 'org.springframework.security.crypto.password.PasswordEncoder' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2024-05-19T16:28:03.754+02:00  INFO 8324 --- [NYEProgenv] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-19T16:28:03.755+02:00  INFO 8324 --- [NYEProgenv] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-19T16:28:03.763+02:00  INFO 8324 --- [NYEProgenv] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-19T16:28:03.764+02:00  INFO 8324 --- [NYEProgenv] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-05-19T16:28:03.773+02:00  INFO 8324 --- [NYEProgenv] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-05-19T16:28:03.785+02:00 ERROR 8324 --- [NYEProgenv] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field passwordEncoder in hu.nye.vpe.nyeprogenv.user.RegistrationController required a bean of type 'org.springframework.security.crypto.password.PasswordEncoder' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.security.crypto.password.PasswordEncoder' in your configuration.
+
+2024-05-19T16:28:35.738+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] h.n.v.nyeprogenv.NyeProgenvApplication   : Starting NyeProgenvApplication using Java 19.0.1 with PID 34116 (D:\Development\Java\NYEProgenv\target\classes started by VPe in D:\Development\Java\NYEProgenv)
+2024-05-19T16:28:35.739+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] h.n.v.nyeprogenv.NyeProgenvApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-05-19T16:28:35.866+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\VPe\.m2\repository\com\sun\xml\bind\jaxb-impl\3.0.1\jaxb-impl-3.0.1.jar referenced one or more files that do not exist: file:/C:/Users/VPe/.m2/repository/com/sun/xml/bind/jaxb-impl/3.0.1/jaxb-core.jar
+2024-05-19T16:28:35.866+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\VPe\.m2\repository\com\sun\xml\bind\jaxb-core\4.0.5\jaxb-core-4.0.5.jar referenced one or more files that do not exist: file:/C:/Users/VPe/.m2/repository/com/sun/xml/bind/jaxb-core/4.0.5/jakarta.activation-api.jar,file:/C:/Users/VPe/.m2/repository/com/sun/xml/bind/jaxb-core/4.0.5/jakarta.xml.bind-api.jar
+2024-05-19T16:28:35.867+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-05-19T16:28:35.867+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-05-19T16:28:36.208+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-19T16:28:36.209+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-05-19T16:28:36.226+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface hu.nye.vpe.nyeprogenv.user.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-05-19T16:28:36.227+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 0 JDBC repository interfaces.
+2024-05-19T16:28:36.233+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-19T16:28:36.234+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-19T16:28:36.246+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 1 JPA repository interface.
+2024-05-19T16:28:36.533+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-19T16:28:36.539+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-19T16:28:36.540+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-05-19T16:28:36.571+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-19T16:28:36.571+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 704 ms
+2024-05-19T16:28:36.654+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-19T16:28:36.678+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-19T16:28:36.692+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-19T16:28:36.813+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-19T16:28:36.827+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-19T16:28:36.969+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@46db2723
+2024-05-19T16:28:36.970+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-19T16:28:37.466+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-19T16:28:37.500+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-19T16:28:37.730+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-05-19T16:28:37.821+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5804f7cd, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@31db1015, org.springframework.security.web.context.SecurityContextHolderFilter@684572e7, org.springframework.security.web.header.HeaderWriterFilter@6b1eba04, org.springframework.web.filter.CorsFilter@7aedc152, org.springframework.security.web.csrf.CsrfFilter@59ab58a1, org.springframework.security.web.authentication.logout.LogoutFilter@79e3af17, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@345146df, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@754476f4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1c9d9759, org.springframework.security.web.access.ExceptionTranslationFilter@108eb0ef, org.springframework.security.web.access.intercept.AuthorizationFilter@5f66ca02]
+2024-05-19T16:28:38.015+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-05-19T16:28:38.036+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-05-19T16:28:38.043+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] h.n.v.nyeprogenv.NyeProgenvApplication   : Started NyeProgenvApplication in 2.504 seconds (process running for 2.902)
+2024-05-19T16:28:41.844+02:00  INFO 34116 --- [NYEProgenv] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-19T16:28:41.845+02:00  INFO 34116 --- [NYEProgenv] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-19T16:28:41.845+02:00  INFO 34116 --- [NYEProgenv] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-05-19T16:28:41.853+02:00 DEBUG 34116 --- [NYEProgenv] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /
+2024-05-19T16:28:41.858+02:00 DEBUG 34116 --- [NYEProgenv] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /
+2024-05-19T16:28:42.279+02:00 DEBUG 34116 --- [NYEProgenv] [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-05-19T16:28:44.649+02:00 DEBUG 34116 --- [NYEProgenv] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /login
+2024-05-19T16:28:44.651+02:00 DEBUG 34116 --- [NYEProgenv] [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-05-19T16:28:44.653+02:00 DEBUG 34116 --- [NYEProgenv] [http-nio-8080-exec-2] o.s.s.w.s.HttpSessionRequestCache        : Saved request http://localhost:8080/login?continue to session
+2024-05-19T16:28:44.653+02:00 DEBUG 34116 --- [NYEProgenv] [http-nio-8080-exec-2] o.s.s.w.a.Http403ForbiddenEntryPoint     : Pre-authenticated entry point called. Rejecting access
+2024-05-19T16:28:44.656+02:00 DEBUG 34116 --- [NYEProgenv] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /error
+2024-05-19T16:28:44.656+02:00 DEBUG 34116 --- [NYEProgenv] [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-05-19T16:28:44.657+02:00 DEBUG 34116 --- [NYEProgenv] [http-nio-8080-exec-2] o.s.s.w.s.HttpSessionRequestCache        : Saved request http://localhost:8080/error?continue to session
+2024-05-19T16:28:44.657+02:00 DEBUG 34116 --- [NYEProgenv] [http-nio-8080-exec-2] o.s.s.w.a.Http403ForbiddenEntryPoint     : Pre-authenticated entry point called. Rejecting access
+2024-05-19T16:29:03.206+02:00  INFO 34116 --- [NYEProgenv] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-05-19T16:29:03.218+02:00  INFO 34116 --- [NYEProgenv] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-19T16:29:03.220+02:00  INFO 34116 --- [NYEProgenv] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-19T16:29:03.227+02:00  INFO 34116 --- [NYEProgenv] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-19T16:29:03.319+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] h.n.v.nyeprogenv.NyeProgenvApplication   : Starting NyeProgenvApplication using Java 19.0.1 with PID 34116 (D:\Development\Java\NYEProgenv\target\classes started by VPe in D:\Development\Java\NYEProgenv)
+2024-05-19T16:29:03.319+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] h.n.v.nyeprogenv.NyeProgenvApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-05-19T16:29:03.392+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-19T16:29:03.392+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-05-19T16:29:03.394+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface hu.nye.vpe.nyeprogenv.user.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-05-19T16:29:03.395+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JDBC repository interfaces.
+2024-05-19T16:29:03.396+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-19T16:29:03.396+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-19T16:29:03.398+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 1 JPA repository interface.
+2024-05-19T16:29:03.444+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-19T16:29:03.444+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-19T16:29:03.444+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-05-19T16:29:03.461+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-19T16:29:03.461+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 141 ms
+2024-05-19T16:29:03.482+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-19T16:29:03.483+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-19T16:29:03.486+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-19T16:29:03.486+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2024-05-19T16:29:03.498+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@44df9fb8
+2024-05-19T16:29:03.498+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2024-05-19T16:29:03.518+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-19T16:29:03.527+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-19T16:29:03.564+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-05-19T16:29:03.584+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3224f2af, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@131290e1, org.springframework.security.web.context.SecurityContextHolderFilter@12b72d3a, org.springframework.security.web.header.HeaderWriterFilter@67a170ff, org.springframework.web.filter.CorsFilter@24ea5498, org.springframework.security.web.csrf.CsrfFilter@2058cb53, org.springframework.security.web.authentication.logout.LogoutFilter@64c8abe9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@74536e6c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@23f73bc0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@113f724e, org.springframework.security.web.access.ExceptionTranslationFilter@6937d88e, org.springframework.security.web.access.intercept.AuthorizationFilter@11b48a89]
+2024-05-19T16:29:03.617+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-05-19T16:29:03.624+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-05-19T16:29:03.626+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] h.n.v.nyeprogenv.NyeProgenvApplication   : Started NyeProgenvApplication in 0.321 seconds (process running for 28.485)
+2024-05-19T16:29:03.627+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-05-19T16:29:05.972+02:00  INFO 34116 --- [NYEProgenv] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-19T16:29:05.972+02:00  INFO 34116 --- [NYEProgenv] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-19T16:29:05.973+02:00  INFO 34116 --- [NYEProgenv] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-05-19T16:29:05.973+02:00 DEBUG 34116 --- [NYEProgenv] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /login
+2024-05-19T16:29:05.974+02:00 DEBUG 34116 --- [NYEProgenv] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /login
+2024-05-19T16:29:06.037+02:00 DEBUG 34116 --- [NYEProgenv] [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-05-19T16:29:08.268+02:00 DEBUG 34116 --- [NYEProgenv] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing POST /login
+2024-05-19T16:29:08.271+02:00 DEBUG 34116 --- [NYEProgenv] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured POST /login
+2024-05-19T16:29:08.273+02:00  WARN 34116 --- [NYEProgenv] [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+2024-05-19T16:29:08.273+02:00 DEBUG 34116 --- [NYEProgenv] [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-05-19T16:29:08.274+02:00 DEBUG 34116 --- [NYEProgenv] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing POST /error
+2024-05-19T16:29:08.274+02:00 DEBUG 34116 --- [NYEProgenv] [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-05-19T16:29:08.274+02:00 DEBUG 34116 --- [NYEProgenv] [http-nio-8080-exec-2] o.s.s.w.a.Http403ForbiddenEntryPoint     : Pre-authenticated entry point called. Rejecting access
+2024-05-19T16:29:18.283+02:00 DEBUG 34116 --- [NYEProgenv] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /
+2024-05-19T16:29:18.283+02:00 DEBUG 34116 --- [NYEProgenv] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /
+2024-05-19T16:29:18.295+02:00 DEBUG 34116 --- [NYEProgenv] [http-nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-05-19T16:30:38.341+02:00  INFO 34116 --- [NYEProgenv] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2024-05-19T16:30:38.352+02:00  INFO 34116 --- [NYEProgenv] [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-19T16:30:38.353+02:00  INFO 34116 --- [NYEProgenv] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2024-05-19T16:30:38.362+02:00  INFO 34116 --- [NYEProgenv] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2024-05-19T16:30:38.491+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] h.n.v.nyeprogenv.NyeProgenvApplication   : Starting NyeProgenvApplication using Java 19.0.1 with PID 34116 (D:\Development\Java\NYEProgenv\target\classes started by VPe in D:\Development\Java\NYEProgenv)
+2024-05-19T16:30:38.491+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] h.n.v.nyeprogenv.NyeProgenvApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-05-19T16:30:38.574+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-19T16:30:38.574+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-05-19T16:30:38.576+02:00  WARN 34116 --- [NYEProgenv] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: java.lang.TypeNotPresentException: Type hu.nye.vpe.nyeprogenv.user.User not present
+2024-05-19T16:30:38.581+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-05-19T16:30:38.594+02:00 ERROR 34116 --- [NYEProgenv] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.TypeNotPresentException: Type hu.nye.vpe.nyeprogenv.user.User not present
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:117) ~[na:na]
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:125) ~[na:na]
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49) ~[na:na]
+	at java.base/sun.reflect.generics.visitor.Reifier.reifyTypeArguments(Reifier.java:68) ~[na:na]
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:138) ~[na:na]
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49) ~[na:na]
+	at java.base/sun.reflect.generics.repository.ClassRepository.computeSuperInterfaces(ClassRepository.java:117) ~[na:na]
+	at java.base/sun.reflect.generics.repository.ClassRepository.getSuperInterfaces(ClassRepository.java:95) ~[na:na]
+	at java.base/java.lang.Class.getGenericInterfaces(Class.java:1250) ~[na:na]
+	at org.springframework.core.ResolvableType.getInterfaces(ResolvableType.java:517) ~[spring-core-6.1.5.jar:6.1.5]
+	at org.springframework.core.ResolvableType.as(ResolvableType.java:465) ~[spring-core-6.1.5.jar:6.1.5]
+	at org.springframework.data.util.TypeDiscoverer.getSuperTypeInformation(TypeDiscoverer.java:256) ~[spring-data-commons-3.2.4.jar:3.2.4]
+	at org.springframework.data.util.ClassTypeInformation.getSuperTypeInformation(ClassTypeInformation.java:36) ~[spring-data-commons-3.2.4.jar:3.2.4]
+	at org.springframework.data.util.TypeInformation.getRequiredSuperTypeInformation(TypeInformation.java:327) ~[spring-data-commons-3.2.4.jar:3.2.4]
+	at org.springframework.data.repository.core.support.DefaultRepositoryMetadata.<init>(DefaultRepositoryMetadata.java:55) ~[spring-data-commons-3.2.4.jar:3.2.4]
+	at org.springframework.data.repository.core.support.AbstractRepositoryMetadata.getMetadata(AbstractRepositoryMetadata.java:77) ~[spring-data-commons-3.2.4.jar:3.2.4]
+	at org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport.getRepositoryConfigurations(RepositoryConfigurationExtensionSupport.java:91) ~[spring-data-commons-3.2.4.jar:3.2.4]
+	at org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:164) ~[spring-data-commons-3.2.4.jar:3.2.4]
+	at org.springframework.boot.autoconfigure.data.AbstractRepositoryConfigurationSourceSupport.registerBeanDefinitions(AbstractRepositoryConfigurationSourceSupport.java:62) ~[spring-boot-autoconfigure-3.2.4.jar:3.2.4]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.lambda$loadBeanDefinitionsFromRegistrars$1(ConfigurationClassBeanDefinitionReader.java:376) ~[spring-context-6.1.5.jar:6.1.5]
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:729) ~[na:na]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsFromRegistrars(ConfigurationClassBeanDefinitionReader.java:375) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:148) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:120) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:428) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:289) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:788) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:606) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.2.4.jar:3.2.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.2.4.jar:3.2.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.2.4.jar:3.2.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334) ~[spring-boot-3.2.4.jar:3.2.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354) ~[spring-boot-3.2.4.jar:3.2.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343) ~[spring-boot-3.2.4.jar:3.2.4]
+	at hu.nye.vpe.nyeprogenv.NyeProgenvApplication.main(NyeProgenvApplication.java:13) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.2.4.jar:3.2.4]
+Caused by: java.lang.ClassNotFoundException: hu.nye.vpe.nyeprogenv.user.User
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521) ~[na:na]
+	at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:495) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:474) ~[na:na]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121) ~[spring-boot-devtools-3.2.4.jar:3.2.4]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521) ~[na:na]
+	at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:495) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:474) ~[na:na]
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:114) ~[na:na]
+	... 39 common frames omitted
+
+2024-05-19T16:30:52.221+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] h.n.v.nyeprogenv.NyeProgenvApplication   : Starting NyeProgenvApplication using Java 19.0.1 with PID 34116 (D:\Development\Java\NYEProgenv\target\classes started by VPe in D:\Development\Java\NYEProgenv)
+2024-05-19T16:30:52.221+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] h.n.v.nyeprogenv.NyeProgenvApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-05-19T16:30:52.300+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-19T16:30:52.300+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-05-19T16:30:52.303+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface hu.nye.vpe.nyeprogenv.user.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-05-19T16:30:52.303+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JDBC repository interfaces.
+2024-05-19T16:30:52.305+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-19T16:30:52.305+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-19T16:30:52.307+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 1 JPA repository interface.
+2024-05-19T16:30:52.349+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-19T16:30:52.349+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-19T16:30:52.349+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-05-19T16:30:52.366+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-19T16:30:52.367+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 145 ms
+2024-05-19T16:30:52.384+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-19T16:30:52.385+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-19T16:30:52.387+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-19T16:30:52.388+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2024-05-19T16:30:52.398+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3a0248d6
+2024-05-19T16:30:52.398+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2024-05-19T16:30:52.421+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-19T16:30:52.458+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-19T16:30:52.503+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-05-19T16:30:52.527+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@34853985, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@442b1e54, org.springframework.security.web.context.SecurityContextHolderFilter@bb2a959, org.springframework.security.web.header.HeaderWriterFilter@7c21e316, org.springframework.web.filter.CorsFilter@16ce7cef, org.springframework.security.web.csrf.CsrfFilter@70f48650, org.springframework.security.web.authentication.logout.LogoutFilter@48a71f2e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5f206879, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@258be23a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3b6042f1, org.springframework.security.web.access.ExceptionTranslationFilter@4d96e8f7, org.springframework.security.web.access.intercept.AuthorizationFilter@6e787f78]
+2024-05-19T16:30:52.557+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-05-19T16:30:52.564+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-05-19T16:30:52.566+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] h.n.v.nyeprogenv.NyeProgenvApplication   : Started NyeProgenvApplication in 0.355 seconds (process running for 137.425)
+2024-05-19T16:30:52.568+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-05-19T16:31:21.275+02:00  INFO 34116 --- [NYEProgenv] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-19T16:31:21.275+02:00  INFO 34116 --- [NYEProgenv] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-19T16:31:21.275+02:00  INFO 34116 --- [NYEProgenv] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-05-19T16:31:21.276+02:00 DEBUG 34116 --- [NYEProgenv] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /login
+2024-05-19T16:31:21.276+02:00 DEBUG 34116 --- [NYEProgenv] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /login
+2024-05-19T16:31:21.293+02:00 DEBUG 34116 --- [NYEProgenv] [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-05-19T16:31:24.407+02:00  INFO 34116 --- [NYEProgenv] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 1 deletion, 1 modification)
+2024-05-19T16:31:24.416+02:00  INFO 34116 --- [NYEProgenv] [Thread-11] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-19T16:31:24.416+02:00  INFO 34116 --- [NYEProgenv] [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2024-05-19T16:31:24.424+02:00  INFO 34116 --- [NYEProgenv] [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2024-05-19T16:31:24.504+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] h.n.v.nyeprogenv.NyeProgenvApplication   : Starting NyeProgenvApplication using Java 19.0.1 with PID 34116 (D:\Development\Java\NYEProgenv\target\classes started by VPe in D:\Development\Java\NYEProgenv)
+2024-05-19T16:31:24.504+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] h.n.v.nyeprogenv.NyeProgenvApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-05-19T16:31:24.565+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-19T16:31:24.565+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-05-19T16:31:24.566+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0 ms. Found 0 JDBC repository interfaces.
+2024-05-19T16:31:24.567+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-19T16:31:24.567+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-19T16:31:24.568+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0 ms. Found 0 JPA repository interfaces.
+2024-05-19T16:31:24.602+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-19T16:31:24.603+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-19T16:31:24.603+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-05-19T16:31:24.617+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-19T16:31:24.617+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 112 ms
+2024-05-19T16:31:24.640+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-19T16:31:24.641+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-19T16:31:24.643+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-19T16:31:24.643+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2024-05-19T16:31:24.653+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@77f80f6f
+2024-05-19T16:31:24.653+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2024-05-19T16:31:24.669+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-19T16:31:24.674+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-19T16:31:24.677+02:00  WARN 34116 --- [NYEProgenv] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'customUserDetailsService' defined in file [D:\Development\Java\NYEProgenv\target\classes\hu\nye\vpe\nyeprogenv\user\CustomUserDetailsService.class]: Post-processing of merged bean definition failed
+2024-05-19T16:31:24.677+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-19T16:31:24.677+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2024-05-19T16:31:24.678+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2024-05-19T16:31:24.678+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-05-19T16:31:24.684+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-05-19T16:31:24.685+02:00 ERROR 34116 --- [NYEProgenv] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'customUserDetailsService' defined in file [D:\Development\Java\NYEProgenv\target\classes\hu\nye\vpe\nyeprogenv\user\CustomUserDetailsService.class]: Post-processing of merged bean definition failed
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:577) ~[spring-beans-6.1.5.jar:6.1.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.5.jar:6.1.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.1.5.jar:6.1.5]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.5.jar:6.1.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.1.5.jar:6.1.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.5.jar:6.1.5]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975) ~[spring-beans-6.1.5.jar:6.1.5]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.2.4.jar:3.2.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.2.4.jar:3.2.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.2.4.jar:3.2.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334) ~[spring-boot-3.2.4.jar:3.2.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354) ~[spring-boot-3.2.4.jar:3.2.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343) ~[spring-boot-3.2.4.jar:3.2.4]
+	at hu.nye.vpe.nyeprogenv.NyeProgenvApplication.main(NyeProgenvApplication.java:13) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.2.4.jar:3.2.4]
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [hu.nye.vpe.nyeprogenv.user.CustomUserDetailsService] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@6f3254d9]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:757) ~[spring-core-6.1.5.jar:6.1.5]
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:689) ~[spring-core-6.1.5.jar:6.1.5]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.buildPersistenceMetadata(PersistenceAnnotationBeanPostProcessor.java:436) ~[spring-orm-6.1.5.jar:6.1.5]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.findPersistenceMetadata(PersistenceAnnotationBeanPostProcessor.java:417) ~[spring-orm-6.1.5.jar:6.1.5]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.findInjectionMetadata(PersistenceAnnotationBeanPostProcessor.java:376) ~[spring-orm-6.1.5.jar:6.1.5]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(PersistenceAnnotationBeanPostProcessor.java:353) ~[spring-orm-6.1.5.jar:6.1.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1085) ~[spring-beans-6.1.5.jar:6.1.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:574) ~[spring-beans-6.1.5.jar:6.1.5]
+	... 18 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: hu/nye/vpe/nyeprogenv/user/UserRepository
+	at java.base/java.lang.Class.getDeclaredFields0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.privateGetDeclaredFields(Class.java:3353) ~[na:na]
+	at java.base/java.lang.Class.getDeclaredFields(Class.java:2424) ~[na:na]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:752) ~[spring-core-6.1.5.jar:6.1.5]
+	... 25 common frames omitted
+Caused by: java.lang.ClassNotFoundException: hu.nye.vpe.nyeprogenv.user.UserRepository
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521) ~[na:na]
+	at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:495) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:474) ~[na:na]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121) ~[spring-boot-devtools-3.2.4.jar:3.2.4]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521) ~[na:na]
+	... 29 common frames omitted
+
+2024-05-19T16:31:36.654+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] h.n.v.nyeprogenv.NyeProgenvApplication   : Starting NyeProgenvApplication using Java 19.0.1 with PID 34116 (D:\Development\Java\NYEProgenv\target\classes started by VPe in D:\Development\Java\NYEProgenv)
+2024-05-19T16:31:36.654+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] h.n.v.nyeprogenv.NyeProgenvApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-05-19T16:31:36.711+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-19T16:31:36.711+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-05-19T16:31:36.712+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0 ms. Found 0 JDBC repository interfaces.
+2024-05-19T16:31:36.713+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-19T16:31:36.713+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-19T16:31:36.714+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0 ms. Found 0 JPA repository interfaces.
+2024-05-19T16:31:36.749+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-19T16:31:36.749+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-19T16:31:36.749+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-05-19T16:31:36.763+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-05-19T16:31:36.763+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 108 ms
+2024-05-19T16:31:36.778+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-19T16:31:36.779+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-19T16:31:36.780+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-19T16:31:36.781+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2024-05-19T16:31:36.791+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@43ee929c
+2024-05-19T16:31:36.791+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2024-05-19T16:31:36.805+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-19T16:31:36.809+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-19T16:31:36.812+02:00  WARN 34116 --- [NYEProgenv] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userController' defined in file [D:\Development\Java\NYEProgenv\target\classes\hu\nye\vpe\nyeprogenv\user\UserController.class]: Post-processing of merged bean definition failed
+2024-05-19T16:31:36.812+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-19T16:31:36.812+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2024-05-19T16:31:36.813+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2024-05-19T16:31:36.813+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-05-19T16:31:36.817+02:00  INFO 34116 --- [NYEProgenv] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-05-19T16:31:36.818+02:00 ERROR 34116 --- [NYEProgenv] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userController' defined in file [D:\Development\Java\NYEProgenv\target\classes\hu\nye\vpe\nyeprogenv\user\UserController.class]: Post-processing of merged bean definition failed
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:577) ~[spring-beans-6.1.5.jar:6.1.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.5.jar:6.1.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.1.5.jar:6.1.5]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.5.jar:6.1.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.1.5.jar:6.1.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.5.jar:6.1.5]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975) ~[spring-beans-6.1.5.jar:6.1.5]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624) ~[spring-context-6.1.5.jar:6.1.5]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.2.4.jar:3.2.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.2.4.jar:3.2.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.2.4.jar:3.2.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334) ~[spring-boot-3.2.4.jar:3.2.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354) ~[spring-boot-3.2.4.jar:3.2.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343) ~[spring-boot-3.2.4.jar:3.2.4]
+	at hu.nye.vpe.nyeprogenv.NyeProgenvApplication.main(NyeProgenvApplication.java:13) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.2.4.jar:3.2.4]
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [hu.nye.vpe.nyeprogenv.user.UserController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@3b7f154b]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:757) ~[spring-core-6.1.5.jar:6.1.5]
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:689) ~[spring-core-6.1.5.jar:6.1.5]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.buildPersistenceMetadata(PersistenceAnnotationBeanPostProcessor.java:436) ~[spring-orm-6.1.5.jar:6.1.5]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.findPersistenceMetadata(PersistenceAnnotationBeanPostProcessor.java:417) ~[spring-orm-6.1.5.jar:6.1.5]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.findInjectionMetadata(PersistenceAnnotationBeanPostProcessor.java:376) ~[spring-orm-6.1.5.jar:6.1.5]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(PersistenceAnnotationBeanPostProcessor.java:353) ~[spring-orm-6.1.5.jar:6.1.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1085) ~[spring-beans-6.1.5.jar:6.1.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:574) ~[spring-beans-6.1.5.jar:6.1.5]
+	... 18 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: hu/nye/vpe/nyeprogenv/user/UserService
+	at java.base/java.lang.Class.getDeclaredFields0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.privateGetDeclaredFields(Class.java:3353) ~[na:na]
+	at java.base/java.lang.Class.getDeclaredFields(Class.java:2424) ~[na:na]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:752) ~[spring-core-6.1.5.jar:6.1.5]
+	... 25 common frames omitted
+Caused by: java.lang.ClassNotFoundException: hu.nye.vpe.nyeprogenv.user.UserService
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521) ~[na:na]
+	at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:495) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:474) ~[na:na]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121) ~[spring-boot-devtools-3.2.4.jar:3.2.4]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521) ~[na:na]
+	... 29 common frames omitted
+
+2024-05-19T16:33:27.162+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] h.n.v.nyeprogenv.NyeProgenvApplication   : Starting NyeProgenvApplication using Java 19.0.1 with PID 34148 (D:\Development\Java\NYEProgenv\target\classes started by VPe in D:\Development\Java\NYEProgenv)
+2024-05-19T16:33:27.163+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] h.n.v.nyeprogenv.NyeProgenvApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-05-19T16:33:27.288+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\VPe\.m2\repository\com\sun\xml\bind\jaxb-impl\3.0.1\jaxb-impl-3.0.1.jar referenced one or more files that do not exist: file:/C:/Users/VPe/.m2/repository/com/sun/xml/bind/jaxb-impl/3.0.1/jaxb-core.jar
+2024-05-19T16:33:27.288+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\VPe\.m2\repository\com\sun\xml\bind\jaxb-core\4.0.5\jaxb-core-4.0.5.jar referenced one or more files that do not exist: file:/C:/Users/VPe/.m2/repository/com/sun/xml/bind/jaxb-core/4.0.5/jakarta.activation-api.jar,file:/C:/Users/VPe/.m2/repository/com/sun/xml/bind/jaxb-core/4.0.5/jakarta.xml.bind-api.jar
+2024-05-19T16:33:27.288+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-05-19T16:33:27.289+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-05-19T16:33:27.616+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-19T16:33:27.617+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-05-19T16:33:27.633+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface hu.nye.vpe.nyeprogenv.user.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-05-19T16:33:27.633+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 0 JDBC repository interfaces.
+2024-05-19T16:33:27.639+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-19T16:33:27.639+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-19T16:33:27.651+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 1 JPA repository interface.
+2024-05-19T16:33:27.912+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-19T16:33:27.918+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-19T16:33:27.919+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-05-19T16:33:27.948+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-19T16:33:27.948+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 659 ms
+2024-05-19T16:33:28.022+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-19T16:33:28.044+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-19T16:33:28.058+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-19T16:33:28.179+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-19T16:33:28.193+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-19T16:33:28.324+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6a3a1f73
+2024-05-19T16:33:28.325+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-19T16:33:28.746+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-19T16:33:28.777+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-19T16:33:28.999+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-05-19T16:33:29.097+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7ac30ede, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@70530425, org.springframework.security.web.context.SecurityContextHolderFilter@16c18376, org.springframework.security.web.header.HeaderWriterFilter@3cea91db, org.springframework.web.filter.CorsFilter@773d6105, org.springframework.security.web.csrf.CsrfFilter@4992b961, org.springframework.security.web.authentication.logout.LogoutFilter@767261fd, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@35e16447, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3bda592c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@196a406c, org.springframework.security.web.access.ExceptionTranslationFilter@6b3126f9, org.springframework.security.web.access.intercept.AuthorizationFilter@35e7ffbc]
+2024-05-19T16:33:29.294+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-05-19T16:33:29.314+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-05-19T16:33:29.320+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] h.n.v.nyeprogenv.NyeProgenvApplication   : Started NyeProgenvApplication in 2.342 seconds (process running for 2.72)
+2024-05-19T16:33:34.116+02:00  INFO 34148 --- [NYEProgenv] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-19T16:33:34.116+02:00  INFO 34148 --- [NYEProgenv] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-19T16:33:34.117+02:00  INFO 34148 --- [NYEProgenv] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-05-19T16:33:34.125+02:00 DEBUG 34148 --- [NYEProgenv] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing POST /login
+2024-05-19T16:33:34.131+02:00 DEBUG 34148 --- [NYEProgenv] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured POST /login
+2024-05-19T16:33:34.135+02:00  WARN 34148 --- [NYEProgenv] [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+2024-05-19T16:33:34.135+02:00 DEBUG 34148 --- [NYEProgenv] [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-05-19T16:33:34.142+02:00 DEBUG 34148 --- [NYEProgenv] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing POST /error
+2024-05-19T16:33:34.142+02:00 DEBUG 34148 --- [NYEProgenv] [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-05-19T16:33:34.142+02:00 DEBUG 34148 --- [NYEProgenv] [http-nio-8080-exec-1] o.s.s.w.a.Http403ForbiddenEntryPoint     : Pre-authenticated entry point called. Rejecting access
+2024-05-19T16:35:38.653+02:00 DEBUG 34148 --- [NYEProgenv] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /
+2024-05-19T16:35:38.653+02:00 DEBUG 34148 --- [NYEProgenv] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /
+2024-05-19T16:35:39.107+02:00 DEBUG 34148 --- [NYEProgenv] [http-nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-05-19T16:35:41.100+02:00 DEBUG 34148 --- [NYEProgenv] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /login
+2024-05-19T16:35:41.100+02:00 DEBUG 34148 --- [NYEProgenv] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /login
+2024-05-19T16:35:41.159+02:00 DEBUG 34148 --- [NYEProgenv] [http-nio-8080-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-05-19T16:35:42.149+02:00 DEBUG 34148 --- [NYEProgenv] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing POST /login
+2024-05-19T16:35:42.150+02:00 DEBUG 34148 --- [NYEProgenv] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured POST /login
+2024-05-19T16:35:42.150+02:00  WARN 34148 --- [NYEProgenv] [http-nio-8080-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+2024-05-19T16:35:42.151+02:00 DEBUG 34148 --- [NYEProgenv] [http-nio-8080-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-05-19T16:35:42.151+02:00 DEBUG 34148 --- [NYEProgenv] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing POST /error
+2024-05-19T16:35:42.151+02:00 DEBUG 34148 --- [NYEProgenv] [http-nio-8080-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-05-19T16:35:42.152+02:00 DEBUG 34148 --- [NYEProgenv] [http-nio-8080-exec-5] o.s.s.w.a.Http403ForbiddenEntryPoint     : Pre-authenticated entry point called. Rejecting access
+2024-05-19T16:35:42.718+02:00  INFO 34148 --- [NYEProgenv] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-05-19T16:35:42.731+02:00  INFO 34148 --- [NYEProgenv] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-19T16:35:42.733+02:00  INFO 34148 --- [NYEProgenv] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-19T16:35:42.740+02:00  INFO 34148 --- [NYEProgenv] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-19T16:35:42.843+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] h.n.v.nyeprogenv.NyeProgenvApplication   : Starting NyeProgenvApplication using Java 19.0.1 with PID 34148 (D:\Development\Java\NYEProgenv\target\classes started by VPe in D:\Development\Java\NYEProgenv)
+2024-05-19T16:35:42.843+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] h.n.v.nyeprogenv.NyeProgenvApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-05-19T16:35:42.926+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-19T16:35:42.926+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-05-19T16:35:42.929+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface hu.nye.vpe.nyeprogenv.user.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-05-19T16:35:42.929+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JDBC repository interfaces.
+2024-05-19T16:35:42.931+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-19T16:35:42.931+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-19T16:35:42.934+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 1 JPA repository interface.
+2024-05-19T16:35:42.992+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-19T16:35:42.993+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-19T16:35:42.993+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-05-19T16:35:43.010+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-19T16:35:43.010+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 164 ms
+2024-05-19T16:35:43.035+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-19T16:35:43.036+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-19T16:35:43.039+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-19T16:35:43.039+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2024-05-19T16:35:43.052+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1adfd200
+2024-05-19T16:35:43.052+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2024-05-19T16:35:43.069+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-19T16:35:43.075+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-19T16:35:43.123+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-05-19T16:35:43.156+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@328a6d79, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@461dd991, org.springframework.security.web.context.SecurityContextHolderFilter@19d3731e, org.springframework.security.web.header.HeaderWriterFilter@546812e5, org.springframework.web.filter.CorsFilter@6a187b6f, org.springframework.security.web.csrf.CsrfFilter@29c3bd9e, org.springframework.security.web.authentication.logout.LogoutFilter@4e0ab601, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@10ec81f8, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@544d7038, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@303bf848, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2d4802f7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@40a6adf3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@513baa93, org.springframework.security.web.access.ExceptionTranslationFilter@314b8904, org.springframework.security.web.access.intercept.AuthorizationFilter@b4d842e]
+2024-05-19T16:35:43.212+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-05-19T16:35:43.220+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-05-19T16:35:43.223+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] h.n.v.nyeprogenv.NyeProgenvApplication   : Started NyeProgenvApplication in 0.396 seconds (process running for 136.623)
+2024-05-19T16:35:43.225+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-05-19T16:35:46.285+02:00  INFO 34148 --- [NYEProgenv] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-19T16:35:46.285+02:00  INFO 34148 --- [NYEProgenv] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-19T16:35:46.286+02:00  INFO 34148 --- [NYEProgenv] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-05-19T16:35:46.287+02:00 DEBUG 34148 --- [NYEProgenv] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /
+2024-05-19T16:35:46.287+02:00 DEBUG 34148 --- [NYEProgenv] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /
+2024-05-19T16:35:46.305+02:00 DEBUG 34148 --- [NYEProgenv] [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-05-19T16:36:48.631+02:00  INFO 34148 --- [NYEProgenv] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2024-05-19T16:36:48.642+02:00  INFO 34148 --- [NYEProgenv] [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-19T16:36:48.642+02:00  INFO 34148 --- [NYEProgenv] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2024-05-19T16:36:48.648+02:00  INFO 34148 --- [NYEProgenv] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2024-05-19T16:36:48.696+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] h.n.v.nyeprogenv.NyeProgenvApplication   : Starting NyeProgenvApplication using Java 19.0.1 with PID 34148 (D:\Development\Java\NYEProgenv\target\classes started by VPe in D:\Development\Java\NYEProgenv)
+2024-05-19T16:36:48.696+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] h.n.v.nyeprogenv.NyeProgenvApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-05-19T16:36:48.768+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-19T16:36:48.768+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-05-19T16:36:48.771+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface hu.nye.vpe.nyeprogenv.user.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-05-19T16:36:48.771+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JDBC repository interfaces.
+2024-05-19T16:36:48.773+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-19T16:36:48.773+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-19T16:36:48.775+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 1 JPA repository interface.
+2024-05-19T16:36:48.815+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-19T16:36:48.816+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-19T16:36:48.816+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-05-19T16:36:48.832+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-19T16:36:48.832+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 135 ms
+2024-05-19T16:36:48.851+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-19T16:36:48.853+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-19T16:36:48.855+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-19T16:36:48.856+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2024-05-19T16:36:48.867+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@52fdb8de
+2024-05-19T16:36:48.867+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2024-05-19T16:36:48.885+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-19T16:36:48.891+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-19T16:36:48.921+02:00  WARN 34148 --- [NYEProgenv] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'registrationController': Unsatisfied dependency expressed through field 'passwordEncoder': No qualifying bean of type 'org.springframework.security.crypto.password.PasswordEncoder' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2024-05-19T16:36:48.921+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-19T16:36:48.921+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2024-05-19T16:36:48.924+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2024-05-19T16:36:48.924+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-05-19T16:36:48.931+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-05-19T16:36:48.942+02:00 ERROR 34148 --- [NYEProgenv] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field passwordEncoder in hu.nye.vpe.nyeprogenv.user.RegistrationController required a bean of type 'org.springframework.security.crypto.password.PasswordEncoder' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.security.crypto.password.PasswordEncoder' in your configuration.
+
+2024-05-19T16:39:43.907+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] h.n.v.nyeprogenv.NyeProgenvApplication   : Starting NyeProgenvApplication using Java 19.0.1 with PID 34148 (D:\Development\Java\NYEProgenv\target\classes started by VPe in D:\Development\Java\NYEProgenv)
+2024-05-19T16:39:43.907+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] h.n.v.nyeprogenv.NyeProgenvApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-05-19T16:39:43.982+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-19T16:39:43.983+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-05-19T16:39:43.985+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface hu.nye.vpe.nyeprogenv.user.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-05-19T16:39:43.986+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JDBC repository interfaces.
+2024-05-19T16:39:43.987+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-19T16:39:43.987+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-19T16:39:43.989+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 1 JPA repository interface.
+2024-05-19T16:39:44.034+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-19T16:39:44.035+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-19T16:39:44.035+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-05-19T16:39:44.050+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-05-19T16:39:44.050+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 142 ms
+2024-05-19T16:39:44.070+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-19T16:39:44.071+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-19T16:39:44.074+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-19T16:39:44.074+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2024-05-19T16:39:44.085+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6ea26892
+2024-05-19T16:39:44.085+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2024-05-19T16:39:44.100+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-19T16:39:44.105+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-19T16:39:44.140+02:00 DEBUG 34148 --- [NYEProgenv] [restartedMain] swordEncoderAuthenticationManagerBuilder : No authenticationProviders and no parentAuthenticationManager defined. Returning null.
+2024-05-19T16:39:44.144+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-05-19T16:39:44.167+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1aaf417e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@37c52cc2, org.springframework.security.web.context.SecurityContextHolderFilter@7ddf7a34, org.springframework.security.web.header.HeaderWriterFilter@26bea7db, org.springframework.web.filter.CorsFilter@35dbd49c, org.springframework.security.web.csrf.CsrfFilter@4281e4a3, org.springframework.security.web.authentication.logout.LogoutFilter@18a44907, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2079c807, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1ff57845, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@5b8c1bd0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@30362dd0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4c268e65, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3bc8056e, org.springframework.security.web.access.ExceptionTranslationFilter@44a7197a, org.springframework.security.web.access.intercept.AuthorizationFilter@540ad2d4]
+2024-05-19T16:39:44.201+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-05-19T16:39:44.208+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-05-19T16:39:44.210+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] h.n.v.nyeprogenv.NyeProgenvApplication   : Started NyeProgenvApplication in 0.313 seconds (process running for 377.611)
+2024-05-19T16:39:44.211+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-05-19T16:39:48.640+02:00  INFO 34148 --- [NYEProgenv] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-19T16:39:48.640+02:00  INFO 34148 --- [NYEProgenv] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-19T16:39:48.641+02:00  INFO 34148 --- [NYEProgenv] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-05-19T16:39:48.641+02:00 DEBUG 34148 --- [NYEProgenv] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /
+2024-05-19T16:39:48.641+02:00 DEBUG 34148 --- [NYEProgenv] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /
+2024-05-19T16:39:48.658+02:00 DEBUG 34148 --- [NYEProgenv] [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-05-19T16:39:49.532+02:00 DEBUG 34148 --- [NYEProgenv] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /register
+2024-05-19T16:39:49.532+02:00 DEBUG 34148 --- [NYEProgenv] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /register
+2024-05-19T16:39:49.552+02:00 DEBUG 34148 --- [NYEProgenv] [http-nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-05-19T16:39:51.321+02:00 DEBUG 34148 --- [NYEProgenv] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /login
+2024-05-19T16:39:52.586+02:00 DEBUG 34148 --- [NYEProgenv] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing POST /login
+2024-05-19T16:39:52.587+02:00 DEBUG 34148 --- [NYEProgenv] [http-nio-8080-exec-4] o.s.s.web.DefaultRedirectStrategy        : Redirecting to /login?error
+2024-05-19T16:39:52.591+02:00 DEBUG 34148 --- [NYEProgenv] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /login?error
+2024-05-19T16:40:03.536+02:00 DEBUG 34148 --- [NYEProgenv] [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /login
+2024-05-19T16:40:04.279+02:00 DEBUG 34148 --- [NYEProgenv] [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /login
+2024-05-19T16:40:05.368+02:00 DEBUG 34148 --- [NYEProgenv] [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /login
+2024-05-19T16:40:05.880+02:00 DEBUG 34148 --- [NYEProgenv] [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /login
+2024-05-19T16:40:06.069+02:00 DEBUG 34148 --- [NYEProgenv] [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /login
+2024-05-19T16:43:43.680+02:00 DEBUG 34148 --- [NYEProgenv] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing POST /login
+2024-05-19T16:43:43.680+02:00 DEBUG 34148 --- [NYEProgenv] [http-nio-8080-exec-3] o.s.s.web.DefaultRedirectStrategy        : Redirecting to /login?error
+2024-05-19T16:43:43.684+02:00 DEBUG 34148 --- [NYEProgenv] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /login?error
+2024-05-19T16:48:43.281+02:00  INFO 34148 --- [NYEProgenv] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2024-05-19T16:48:43.293+02:00  INFO 34148 --- [NYEProgenv] [Thread-11] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-19T16:48:43.294+02:00  INFO 34148 --- [NYEProgenv] [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2024-05-19T16:48:43.302+02:00  INFO 34148 --- [NYEProgenv] [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2024-05-19T16:48:43.367+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] h.n.v.nyeprogenv.NyeProgenvApplication   : Starting NyeProgenvApplication using Java 19.0.1 with PID 34148 (D:\Development\Java\NYEProgenv\target\classes started by VPe in D:\Development\Java\NYEProgenv)
+2024-05-19T16:48:43.367+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] h.n.v.nyeprogenv.NyeProgenvApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-05-19T16:48:43.436+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-19T16:48:43.436+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-05-19T16:48:43.438+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface hu.nye.vpe.nyeprogenv.user.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-05-19T16:48:43.438+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JDBC repository interfaces.
+2024-05-19T16:48:43.440+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-19T16:48:43.440+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-19T16:48:43.442+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 1 JPA repository interface.
+2024-05-19T16:48:43.482+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-19T16:48:43.482+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-19T16:48:43.482+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-05-19T16:48:43.499+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-05-19T16:48:43.499+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 132 ms
+2024-05-19T16:48:43.519+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-19T16:48:43.520+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-19T16:48:43.522+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-19T16:48:43.522+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2024-05-19T16:48:43.533+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@12c1a672
+2024-05-19T16:48:43.534+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2024-05-19T16:48:43.549+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-19T16:48:43.554+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-19T16:48:43.580+02:00  WARN 34148 --- [NYEProgenv] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'registrationController': Unsatisfied dependency expressed through field 'passwordEncoder': No qualifying bean of type 'org.springframework.security.crypto.password.PasswordEncoder' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2024-05-19T16:48:43.580+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-19T16:48:43.580+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2024-05-19T16:48:43.581+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2024-05-19T16:48:43.582+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-05-19T16:48:43.589+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-05-19T16:48:43.591+02:00 ERROR 34148 --- [NYEProgenv] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field passwordEncoder in hu.nye.vpe.nyeprogenv.user.RegistrationController required a bean of type 'org.springframework.security.crypto.password.PasswordEncoder' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.security.crypto.password.PasswordEncoder' in your configuration.
+
+2024-05-19T16:49:39.757+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] h.n.v.nyeprogenv.NyeProgenvApplication   : Starting NyeProgenvApplication using Java 19.0.1 with PID 34148 (D:\Development\Java\NYEProgenv\target\classes started by VPe in D:\Development\Java\NYEProgenv)
+2024-05-19T16:49:39.757+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] h.n.v.nyeprogenv.NyeProgenvApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-05-19T16:49:39.829+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-19T16:49:39.829+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-05-19T16:49:39.832+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface hu.nye.vpe.nyeprogenv.user.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-05-19T16:49:39.832+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JDBC repository interfaces.
+2024-05-19T16:49:39.833+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-19T16:49:39.833+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-19T16:49:39.835+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 1 JPA repository interface.
+2024-05-19T16:49:39.877+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-19T16:49:39.878+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-19T16:49:39.878+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-05-19T16:49:39.900+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-05-19T16:49:39.900+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 142 ms
+2024-05-19T16:49:39.919+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-19T16:49:39.921+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-19T16:49:39.923+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-19T16:49:39.923+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2024-05-19T16:49:39.937+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-6 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4f7f24d1
+2024-05-19T16:49:39.937+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2024-05-19T16:49:39.954+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-19T16:49:39.958+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-19T16:49:40.011+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-05-19T16:49:40.038+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@101f97e6, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6fb71b8f, org.springframework.security.web.context.SecurityContextHolderFilter@7b7114dd, org.springframework.security.web.header.HeaderWriterFilter@60fc2454, org.springframework.web.filter.CorsFilter@140741a, org.springframework.security.web.csrf.CsrfFilter@1572635b, org.springframework.security.web.authentication.logout.LogoutFilter@1c5e76e8, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7f1957db, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@6ca4ceae, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@34d25c66, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7d9fc853, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6d7b89d1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@589e5dbd, org.springframework.security.web.access.ExceptionTranslationFilter@1360729b, org.springframework.security.web.access.intercept.AuthorizationFilter@67412b08]
+2024-05-19T16:49:40.072+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-05-19T16:49:40.078+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-05-19T16:49:40.081+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] h.n.v.nyeprogenv.NyeProgenvApplication   : Started NyeProgenvApplication in 0.334 seconds (process running for 973.48)
+2024-05-19T16:49:40.081+02:00  INFO 34148 --- [NYEProgenv] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-05-19T16:49:40.133+02:00  INFO 34148 --- [NYEProgenv] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-19T16:49:40.133+02:00  INFO 34148 --- [NYEProgenv] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-19T16:49:40.134+02:00  INFO 34148 --- [NYEProgenv] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-05-19T16:49:40.135+02:00 DEBUG 34148 --- [NYEProgenv] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /login?error
+2024-05-19T16:49:41.975+02:00 DEBUG 34148 --- [NYEProgenv] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /login?error
+2024-05-19T16:49:43.321+02:00 DEBUG 34148 --- [NYEProgenv] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing POST /login
+2024-05-19T16:49:43.519+02:00 DEBUG 34148 --- [NYEProgenv] [http-nio-8080-exec-3] o.s.s.a.dao.DaoAuthenticationProvider    : Authenticated user
+2024-05-19T16:49:43.552+02:00 DEBUG 34148 --- [NYEProgenv] [http-nio-8080-exec-3] .s.ChangeSessionIdAuthenticationStrategy : Changed session id from B0B1C67C1C2E12EE6E4A207BDF676B7C
+2024-05-19T16:49:43.553+02:00 DEBUG 34148 --- [NYEProgenv] [http-nio-8080-exec-3] o.s.s.w.csrf.CsrfAuthenticationStrategy  : Replaced CSRF Token
+2024-05-19T16:49:43.553+02:00 DEBUG 34148 --- [NYEProgenv] [http-nio-8080-exec-3] w.c.HttpSessionSecurityContextRepository : Stored SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=hu.nye.vpe.nyeprogenv.user.CustomUserDetails@35e82204, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=B0B1C67C1C2E12EE6E4A207BDF676B7C], Granted Authorities=[]]] to HttpSession [org.apache.catalina.session.StandardSessionFacade@3fe15082]
+2024-05-19T16:49:43.553+02:00 DEBUG 34148 --- [NYEProgenv] [http-nio-8080-exec-3] w.a.UsernamePasswordAuthenticationFilter : Set SecurityContextHolder to UsernamePasswordAuthenticationToken [Principal=hu.nye.vpe.nyeprogenv.user.CustomUserDetails@35e82204, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=B0B1C67C1C2E12EE6E4A207BDF676B7C], Granted Authorities=[]]
+2024-05-19T16:49:43.553+02:00 DEBUG 34148 --- [NYEProgenv] [http-nio-8080-exec-3] o.s.s.web.DefaultRedirectStrategy        : Redirecting to http://localhost:8080/error?continue
+2024-05-19T16:49:43.557+02:00 DEBUG 34148 --- [NYEProgenv] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /error?continue
+2024-05-19T16:49:43.559+02:00 DEBUG 34148 --- [NYEProgenv] [http-nio-8080-exec-4] o.s.s.w.s.HttpSessionRequestCache        : Loaded matching saved request http://localhost:8080/error?continue
+2024-05-19T16:49:43.560+02:00 DEBUG 34148 --- [NYEProgenv] [http-nio-8080-exec-4] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=hu.nye.vpe.nyeprogenv.user.CustomUserDetails@35e82204, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=B0B1C67C1C2E12EE6E4A207BDF676B7C], Granted Authorities=[]]]
+2024-05-19T16:49:43.560+02:00 DEBUG 34148 --- [NYEProgenv] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /error?continue
+2024-05-19T16:50:06.769+02:00  INFO 34148 --- [NYEProgenv] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-19T16:50:06.770+02:00  INFO 34148 --- [NYEProgenv] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2024-05-19T16:50:06.775+02:00  INFO 34148 --- [NYEProgenv] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
+2024-05-19T16:50:15.968+02:00  INFO 13140 --- [NYEProgenv] [restartedMain] h.n.v.nyeprogenv.NyeProgenvApplication   : Starting NyeProgenvApplication using Java 19.0.1 with PID 13140 (D:\Development\Java\NYEProgenv\target\classes started by VPe in D:\Development\Java\NYEProgenv)
+2024-05-19T16:50:15.970+02:00  INFO 13140 --- [NYEProgenv] [restartedMain] h.n.v.nyeprogenv.NyeProgenvApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-05-19T16:50:16.101+02:00  INFO 13140 --- [NYEProgenv] [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\VPe\.m2\repository\com\sun\xml\bind\jaxb-impl\3.0.1\jaxb-impl-3.0.1.jar referenced one or more files that do not exist: file:/C:/Users/VPe/.m2/repository/com/sun/xml/bind/jaxb-impl/3.0.1/jaxb-core.jar
+2024-05-19T16:50:16.101+02:00  INFO 13140 --- [NYEProgenv] [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\VPe\.m2\repository\com\sun\xml\bind\jaxb-core\4.0.5\jaxb-core-4.0.5.jar referenced one or more files that do not exist: file:/C:/Users/VPe/.m2/repository/com/sun/xml/bind/jaxb-core/4.0.5/jakarta.activation-api.jar,file:/C:/Users/VPe/.m2/repository/com/sun/xml/bind/jaxb-core/4.0.5/jakarta.xml.bind-api.jar
+2024-05-19T16:50:16.101+02:00  INFO 13140 --- [NYEProgenv] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-05-19T16:50:16.101+02:00  INFO 13140 --- [NYEProgenv] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-05-19T16:50:16.513+02:00  INFO 13140 --- [NYEProgenv] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-19T16:50:16.514+02:00  INFO 13140 --- [NYEProgenv] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-05-19T16:50:16.530+02:00  INFO 13140 --- [NYEProgenv] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface hu.nye.vpe.nyeprogenv.user.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-05-19T16:50:16.530+02:00  INFO 13140 --- [NYEProgenv] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 0 JDBC repository interfaces.
+2024-05-19T16:50:16.536+02:00  INFO 13140 --- [NYEProgenv] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-19T16:50:16.537+02:00  INFO 13140 --- [NYEProgenv] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-19T16:50:16.549+02:00  INFO 13140 --- [NYEProgenv] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 1 JPA repository interface.
+2024-05-19T16:50:16.840+02:00  INFO 13140 --- [NYEProgenv] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-19T16:50:16.847+02:00  INFO 13140 --- [NYEProgenv] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-19T16:50:16.847+02:00  INFO 13140 --- [NYEProgenv] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-05-19T16:50:16.878+02:00  INFO 13140 --- [NYEProgenv] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-19T16:50:16.879+02:00  INFO 13140 --- [NYEProgenv] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 777 ms
+2024-05-19T16:50:16.907+02:00  WARN 13140 --- [NYEProgenv] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Cannot deserialize session attribute [SPRING_SECURITY_CONTEXT] for session [ACE09A52214E36CB2C671D482F1DCB5C]
+2024-05-19T16:50:16.964+02:00  INFO 13140 --- [NYEProgenv] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-19T16:50:16.987+02:00  INFO 13140 --- [NYEProgenv] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-19T16:50:17.001+02:00  INFO 13140 --- [NYEProgenv] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-19T16:50:17.129+02:00  INFO 13140 --- [NYEProgenv] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-19T16:50:17.143+02:00  INFO 13140 --- [NYEProgenv] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-19T16:50:17.286+02:00  INFO 13140 --- [NYEProgenv] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4b956b78
+2024-05-19T16:50:17.287+02:00  INFO 13140 --- [NYEProgenv] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-19T16:50:17.722+02:00  INFO 13140 --- [NYEProgenv] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-19T16:50:17.755+02:00  INFO 13140 --- [NYEProgenv] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-19T16:50:17.974+02:00  INFO 13140 --- [NYEProgenv] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-05-19T16:50:18.058+02:00  INFO 13140 --- [NYEProgenv] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4866dd1f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1e9f98a7, org.springframework.security.web.context.SecurityContextHolderFilter@773d6105, org.springframework.security.web.header.HeaderWriterFilter@40d4688, org.springframework.web.filter.CorsFilter@41f5c748, org.springframework.security.web.csrf.CsrfFilter@7933810, org.springframework.security.web.authentication.logout.LogoutFilter@4c021b2b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@13bd1c5, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@4eeac0, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@222a1d9f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7bbd1861, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@13a7591f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5cdaa2e0, org.springframework.security.web.access.ExceptionTranslationFilter@35e7ffbc, org.springframework.security.web.access.intercept.AuthorizationFilter@58f1dbd7]
+2024-05-19T16:50:18.252+02:00  INFO 13140 --- [NYEProgenv] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-05-19T16:50:18.273+02:00  INFO 13140 --- [NYEProgenv] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-05-19T16:50:18.279+02:00  INFO 13140 --- [NYEProgenv] [restartedMain] h.n.v.nyeprogenv.NyeProgenvApplication   : Started NyeProgenvApplication in 2.529 seconds (process running for 2.954)
+2024-05-19T16:50:23.071+02:00  INFO 13140 --- [NYEProgenv] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-19T16:50:23.071+02:00  INFO 13140 --- [NYEProgenv] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-19T16:50:23.072+02:00  INFO 13140 --- [NYEProgenv] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-05-19T16:50:23.082+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /
+2024-05-19T16:50:23.086+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /
+2024-05-19T16:50:23.526+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-05-19T16:50:25.363+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /login
+2024-05-19T16:50:26.405+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing POST /login
+2024-05-19T16:50:26.607+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-5] o.s.s.a.dao.DaoAuthenticationProvider    : Authenticated user
+2024-05-19T16:50:26.641+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-5] .s.ChangeSessionIdAuthenticationStrategy : Changed session id from ACE09A52214E36CB2C671D482F1DCB5C
+2024-05-19T16:50:26.642+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-5] o.s.s.w.csrf.CsrfAuthenticationStrategy  : Replaced CSRF Token
+2024-05-19T16:50:26.642+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-5] w.c.HttpSessionSecurityContextRepository : Stored SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=hu.nye.vpe.nyeprogenv.user.CustomUserDetails@659eb473, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=ACE09A52214E36CB2C671D482F1DCB5C], Granted Authorities=[]]] to HttpSession [org.apache.catalina.session.StandardSessionFacade@59c9d9c1]
+2024-05-19T16:50:26.642+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-5] w.a.UsernamePasswordAuthenticationFilter : Set SecurityContextHolder to UsernamePasswordAuthenticationToken [Principal=hu.nye.vpe.nyeprogenv.user.CustomUserDetails@659eb473, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=ACE09A52214E36CB2C671D482F1DCB5C], Granted Authorities=[]]
+2024-05-19T16:50:26.643+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-5] o.s.s.web.DefaultRedirectStrategy        : Redirecting to /
+2024-05-19T16:50:26.647+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /
+2024-05-19T16:50:26.648+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /
+2024-05-19T16:50:26.661+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-7] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=hu.nye.vpe.nyeprogenv.user.CustomUserDetails@659eb473, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=ACE09A52214E36CB2C671D482F1DCB5C], Granted Authorities=[]]]
+2024-05-19T16:50:33.674+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /users
+2024-05-19T16:50:33.674+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-3] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=hu.nye.vpe.nyeprogenv.user.CustomUserDetails@659eb473, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=ACE09A52214E36CB2C671D482F1DCB5C], Granted Authorities=[]]]
+2024-05-19T16:50:33.674+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /users
+2024-05-19T16:50:36.226+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /register
+2024-05-19T16:50:36.227+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /register
+2024-05-19T16:50:36.250+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-6] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=hu.nye.vpe.nyeprogenv.user.CustomUserDetails@659eb473, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=ACE09A52214E36CB2C671D482F1DCB5C], Granted Authorities=[]]]
+2024-05-19T16:52:15.735+02:00  INFO 13140 --- [NYEProgenv] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-05-19T16:52:15.748+02:00  INFO 13140 --- [NYEProgenv] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-19T16:52:15.751+02:00  INFO 13140 --- [NYEProgenv] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-19T16:52:15.758+02:00  INFO 13140 --- [NYEProgenv] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-19T16:52:15.820+02:00  INFO 13140 --- [NYEProgenv] [restartedMain] h.n.v.nyeprogenv.NyeProgenvApplication   : Starting NyeProgenvApplication using Java 19.0.1 with PID 13140 (D:\Development\Java\NYEProgenv\target\classes started by VPe in D:\Development\Java\NYEProgenv)
+2024-05-19T16:52:15.820+02:00  INFO 13140 --- [NYEProgenv] [restartedMain] h.n.v.nyeprogenv.NyeProgenvApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-05-19T16:52:15.909+02:00  INFO 13140 --- [NYEProgenv] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-19T16:52:15.909+02:00  INFO 13140 --- [NYEProgenv] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-05-19T16:52:15.911+02:00  INFO 13140 --- [NYEProgenv] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface hu.nye.vpe.nyeprogenv.user.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-05-19T16:52:15.912+02:00  INFO 13140 --- [NYEProgenv] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 0 JDBC repository interfaces.
+2024-05-19T16:52:15.913+02:00  INFO 13140 --- [NYEProgenv] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-19T16:52:15.913+02:00  INFO 13140 --- [NYEProgenv] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-19T16:52:15.916+02:00  INFO 13140 --- [NYEProgenv] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 1 JPA repository interface.
+2024-05-19T16:52:15.973+02:00  INFO 13140 --- [NYEProgenv] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-19T16:52:15.973+02:00  INFO 13140 --- [NYEProgenv] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-19T16:52:15.974+02:00  INFO 13140 --- [NYEProgenv] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-05-19T16:52:15.993+02:00  INFO 13140 --- [NYEProgenv] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-19T16:52:15.993+02:00  INFO 13140 --- [NYEProgenv] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 172 ms
+2024-05-19T16:52:16.000+02:00  WARN 13140 --- [NYEProgenv] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Cannot deserialize session attribute [SPRING_SECURITY_CONTEXT] for session [C2CC92A235CC79A2DCDB1EDEC2124358]
+2024-05-19T16:52:16.019+02:00  INFO 13140 --- [NYEProgenv] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-19T16:52:16.020+02:00  INFO 13140 --- [NYEProgenv] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-19T16:52:16.023+02:00  INFO 13140 --- [NYEProgenv] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-19T16:52:16.024+02:00  INFO 13140 --- [NYEProgenv] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2024-05-19T16:52:16.037+02:00  INFO 13140 --- [NYEProgenv] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2996c617
+2024-05-19T16:52:16.038+02:00  INFO 13140 --- [NYEProgenv] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2024-05-19T16:52:16.059+02:00  INFO 13140 --- [NYEProgenv] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-19T16:52:16.065+02:00  INFO 13140 --- [NYEProgenv] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-19T16:52:16.111+02:00  INFO 13140 --- [NYEProgenv] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-05-19T16:52:16.137+02:00  INFO 13140 --- [NYEProgenv] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1a6fc011, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2c610226, org.springframework.security.web.context.SecurityContextHolderFilter@45ac5a9d, org.springframework.security.web.header.HeaderWriterFilter@48bfe127, org.springframework.web.filter.CorsFilter@193246ad, org.springframework.security.web.csrf.CsrfFilter@5c509c4f, org.springframework.security.web.authentication.logout.LogoutFilter@70504a0c, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@681df734, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@7a40fa57, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@1e91b6e8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1d460483, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4dc18c11, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7a1a9263, org.springframework.security.web.access.ExceptionTranslationFilter@5730ece6, org.springframework.security.web.access.intercept.AuthorizationFilter@4c5f2720]
+2024-05-19T16:52:16.175+02:00  INFO 13140 --- [NYEProgenv] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-05-19T16:52:16.185+02:00  INFO 13140 --- [NYEProgenv] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-05-19T16:52:16.189+02:00  INFO 13140 --- [NYEProgenv] [restartedMain] h.n.v.nyeprogenv.NyeProgenvApplication   : Started NyeProgenvApplication in 0.386 seconds (process running for 120.863)
+2024-05-19T16:52:16.191+02:00  INFO 13140 --- [NYEProgenv] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-05-19T16:52:51.803+02:00  INFO 13140 --- [NYEProgenv] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-19T16:52:51.803+02:00  INFO 13140 --- [NYEProgenv] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-19T16:52:51.804+02:00  INFO 13140 --- [NYEProgenv] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-05-19T16:52:51.805+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /users
+2024-05-19T16:52:51.805+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-05-19T16:52:51.808+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-1] o.s.s.w.s.HttpSessionRequestCache        : Saved request http://localhost:8080/users?continue to session
+2024-05-19T16:52:51.809+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-1] o.s.s.web.DefaultRedirectStrategy        : Redirecting to http://localhost:8080/login
+2024-05-19T16:52:51.813+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /login
+2024-05-19T16:52:53.016+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing POST /login
+2024-05-19T16:52:53.143+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-4] o.s.s.a.dao.DaoAuthenticationProvider    : Authenticated user
+2024-05-19T16:52:53.143+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-4] .s.ChangeSessionIdAuthenticationStrategy : Changed session id from C2CC92A235CC79A2DCDB1EDEC2124358
+2024-05-19T16:52:53.144+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-4] o.s.s.w.csrf.CsrfAuthenticationStrategy  : Replaced CSRF Token
+2024-05-19T16:52:53.144+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-4] w.c.HttpSessionSecurityContextRepository : Stored SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=hu.nye.vpe.nyeprogenv.user.CustomUserDetails@20a82d65, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=C2CC92A235CC79A2DCDB1EDEC2124358], Granted Authorities=[]]] to HttpSession [org.apache.catalina.session.StandardSessionFacade@7bbd6e86]
+2024-05-19T16:52:53.144+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-4] w.a.UsernamePasswordAuthenticationFilter : Set SecurityContextHolder to UsernamePasswordAuthenticationToken [Principal=hu.nye.vpe.nyeprogenv.user.CustomUserDetails@20a82d65, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=C2CC92A235CC79A2DCDB1EDEC2124358], Granted Authorities=[]]
+2024-05-19T16:52:53.144+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-4] o.s.s.web.DefaultRedirectStrategy        : Redirecting to http://localhost:8080/users?continue
+2024-05-19T16:52:53.150+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /users?continue
+2024-05-19T16:52:53.151+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-3] o.s.s.w.s.HttpSessionRequestCache        : Loaded matching saved request http://localhost:8080/users?continue
+2024-05-19T16:52:53.152+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-3] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=hu.nye.vpe.nyeprogenv.user.CustomUserDetails@20a82d65, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=C2CC92A235CC79A2DCDB1EDEC2124358], Granted Authorities=[]]]
+2024-05-19T16:52:53.152+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /users?continue
+2024-05-19T16:52:59.873+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /logout
+2024-05-19T16:53:02.201+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing POST /logout
+2024-05-19T16:53:02.202+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-6] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=hu.nye.vpe.nyeprogenv.user.CustomUserDetails@20a82d65, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=C2CC92A235CC79A2DCDB1EDEC2124358], Granted Authorities=[]]]
+2024-05-19T16:53:02.202+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-6] o.s.s.w.a.logout.LogoutFilter            : Logging out [UsernamePasswordAuthenticationToken [Principal=hu.nye.vpe.nyeprogenv.user.CustomUserDetails@20a82d65, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=C2CC92A235CC79A2DCDB1EDEC2124358], Granted Authorities=[]]]
+2024-05-19T16:53:02.202+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-6] o.s.s.w.a.l.SecurityContextLogoutHandler : Invalidated session EBD457CD6F00276D11858FC6C16018B4
+2024-05-19T16:53:02.202+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-6] o.s.s.web.DefaultRedirectStrategy        : Redirecting to /login?logout
+2024-05-19T16:53:02.206+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /login?logout
+2024-05-19T16:53:10.026+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing POST /login
+2024-05-19T16:53:10.086+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-8] o.s.s.a.dao.DaoAuthenticationProvider    : Failed to authenticate since password does not match stored value
+2024-05-19T16:53:10.086+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-8] o.s.s.web.DefaultRedirectStrategy        : Redirecting to /login?error
+2024-05-19T16:53:10.090+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /login?error
+2024-05-19T16:54:10.502+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-10] s.s.w.f.HttpStatusRequestRejectedHandler : Rejecting request due to: The request was rejected because the URL contained a potentially malicious String "//"
+
+org.springframework.security.web.firewall.RequestRejectedException: The request was rejected because the URL contained a potentially malicious String "//"
+	at org.springframework.security.web.firewall.StrictHttpFirewall.rejectedBlocklistedUrls(StrictHttpFirewall.java:539) ~[spring-security-web-6.2.3.jar:6.2.3]
+	at org.springframework.security.web.firewall.StrictHttpFirewall.getFirewalledRequest(StrictHttpFirewall.java:509) ~[spring-security-web-6.2.3.jar:6.2.3]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211) ~[spring-security-web-6.2.3.jar:6.2.3]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195) ~[spring-webmvc-6.1.5.jar:6.1.5]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230) ~[spring-security-config-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.5.jar:6.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+
+2024-05-19T16:54:10.509+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /error
+2024-05-19T16:54:10.509+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-10] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-05-19T16:54:10.509+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-10] o.s.s.w.s.HttpSessionRequestCache        : Saved request http://localhost:8080/error?continue to session
+2024-05-19T16:54:10.509+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-10] o.s.s.web.DefaultRedirectStrategy        : Redirecting to http://localhost:8080/login
+2024-05-19T16:54:10.513+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /login
+2024-05-19T16:54:12.801+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing POST /login
+2024-05-19T16:54:12.863+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-2] o.s.s.a.dao.DaoAuthenticationProvider    : Authenticated user
+2024-05-19T16:54:12.863+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-2] .s.ChangeSessionIdAuthenticationStrategy : Changed session id from 8B22142FBAC0B06F1B916A458572DDC4
+2024-05-19T16:54:12.863+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-2] o.s.s.w.csrf.CsrfAuthenticationStrategy  : Replaced CSRF Token
+2024-05-19T16:54:12.863+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-2] w.c.HttpSessionSecurityContextRepository : Stored SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=hu.nye.vpe.nyeprogenv.user.CustomUserDetails@330bf1ae, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=8B22142FBAC0B06F1B916A458572DDC4], Granted Authorities=[]]] to HttpSession [org.apache.catalina.session.StandardSessionFacade@48bee350]
+2024-05-19T16:54:12.864+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-2] w.a.UsernamePasswordAuthenticationFilter : Set SecurityContextHolder to UsernamePasswordAuthenticationToken [Principal=hu.nye.vpe.nyeprogenv.user.CustomUserDetails@330bf1ae, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=8B22142FBAC0B06F1B916A458572DDC4], Granted Authorities=[]]
+2024-05-19T16:54:12.864+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-2] o.s.s.web.DefaultRedirectStrategy        : Redirecting to http://localhost:8080/error?continue
+2024-05-19T16:54:12.867+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /error?continue
+2024-05-19T16:54:12.868+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-4] o.s.s.w.s.HttpSessionRequestCache        : Loaded matching saved request http://localhost:8080/error?continue
+2024-05-19T16:54:12.868+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-4] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=hu.nye.vpe.nyeprogenv.user.CustomUserDetails@330bf1ae, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=8B22142FBAC0B06F1B916A458572DDC4], Granted Authorities=[]]]
+2024-05-19T16:54:12.868+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /error?continue
+2024-05-19T16:58:16.314+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /dfgdfgd
+2024-05-19T16:58:16.315+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-3] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=hu.nye.vpe.nyeprogenv.user.CustomUserDetails@330bf1ae, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=8B22142FBAC0B06F1B916A458572DDC4], Granted Authorities=[]]]
+2024-05-19T16:58:16.315+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /dfgdfgd
+2024-05-19T16:58:16.322+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /error
+2024-05-19T16:58:16.322+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-3] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=hu.nye.vpe.nyeprogenv.user.CustomUserDetails@330bf1ae, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=8B22142FBAC0B06F1B916A458572DDC4], Granted Authorities=[]]]
+2024-05-19T16:58:16.322+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /error
+2024-05-19T16:59:17.801+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /dfgdfgd
+2024-05-19T16:59:17.801+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-6] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=hu.nye.vpe.nyeprogenv.user.CustomUserDetails@330bf1ae, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=8B22142FBAC0B06F1B916A458572DDC4], Granted Authorities=[]]]
+2024-05-19T16:59:17.801+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /dfgdfgd
+2024-05-19T16:59:17.804+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /error
+2024-05-19T16:59:17.804+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-6] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=hu.nye.vpe.nyeprogenv.user.CustomUserDetails@330bf1ae, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=8B22142FBAC0B06F1B916A458572DDC4], Granted Authorities=[]]]
+2024-05-19T16:59:17.804+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /error
+2024-05-19T17:00:16.655+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /dfgdfgd
+2024-05-19T17:00:16.656+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-7] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=hu.nye.vpe.nyeprogenv.user.CustomUserDetails@330bf1ae, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=8B22142FBAC0B06F1B916A458572DDC4], Granted Authorities=[]]]
+2024-05-19T17:00:16.656+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /dfgdfgd
+2024-05-19T17:00:16.657+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /error
+2024-05-19T17:00:16.658+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-7] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=hu.nye.vpe.nyeprogenv.user.CustomUserDetails@330bf1ae, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=8B22142FBAC0B06F1B916A458572DDC4], Granted Authorities=[]]]
+2024-05-19T17:00:16.658+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /error
+2024-05-19T17:00:17.758+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /dfgdfgd
+2024-05-19T17:00:17.758+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-8] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=hu.nye.vpe.nyeprogenv.user.CustomUserDetails@330bf1ae, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=8B22142FBAC0B06F1B916A458572DDC4], Granted Authorities=[]]]
+2024-05-19T17:00:17.758+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /dfgdfgd
+2024-05-19T17:00:17.759+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /error
+2024-05-19T17:00:17.759+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-8] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=hu.nye.vpe.nyeprogenv.user.CustomUserDetails@330bf1ae, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=8B22142FBAC0B06F1B916A458572DDC4], Granted Authorities=[]]]
+2024-05-19T17:00:17.759+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /error
+2024-05-19T17:00:19.295+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /dfgdfgd
+2024-05-19T17:00:19.296+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-9] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=hu.nye.vpe.nyeprogenv.user.CustomUserDetails@330bf1ae, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=8B22142FBAC0B06F1B916A458572DDC4], Granted Authorities=[]]]
+2024-05-19T17:00:19.296+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /dfgdfgd
+2024-05-19T17:00:19.297+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /error
+2024-05-19T17:00:19.297+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-9] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=hu.nye.vpe.nyeprogenv.user.CustomUserDetails@330bf1ae, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=8B22142FBAC0B06F1B916A458572DDC4], Granted Authorities=[]]]
+2024-05-19T17:00:19.297+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /error
+2024-05-19T17:00:24.632+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /
+2024-05-19T17:00:24.633+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Secured GET /
+2024-05-19T17:00:24.642+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-10] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=hu.nye.vpe.nyeprogenv.user.CustomUserDetails@330bf1ae, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=8B22142FBAC0B06F1B916A458572DDC4], Granted Authorities=[]]]
+2024-05-19T17:01:22.988+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /
+2024-05-19T17:01:22.988+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /
+2024-05-19T17:01:22.996+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-1] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=hu.nye.vpe.nyeprogenv.user.CustomUserDetails@330bf1ae, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=8B22142FBAC0B06F1B916A458572DDC4], Granted Authorities=[]]]
+2024-05-19T17:01:24.689+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /login
+2024-05-19T17:01:27.477+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /logind
+2024-05-19T17:01:27.477+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-4] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=hu.nye.vpe.nyeprogenv.user.CustomUserDetails@330bf1ae, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=8B22142FBAC0B06F1B916A458572DDC4], Granted Authorities=[]]]
+2024-05-19T17:01:27.477+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /logind
+2024-05-19T17:01:27.479+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /error
+2024-05-19T17:01:27.479+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-4] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=hu.nye.vpe.nyeprogenv.user.CustomUserDetails@330bf1ae, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=8B22142FBAC0B06F1B916A458572DDC4], Granted Authorities=[]]]
+2024-05-19T17:01:27.479+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /error
+2024-05-19T17:01:30.565+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /login
+2024-05-19T17:04:03.163+02:00  INFO 13140 --- [NYEProgenv] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-05-19T17:04:03.173+02:00  INFO 13140 --- [NYEProgenv] [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-19T17:04:03.174+02:00  INFO 13140 --- [NYEProgenv] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2024-05-19T17:04:03.191+02:00  INFO 13140 --- [NYEProgenv] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2024-05-19T17:04:03.256+02:00  INFO 13140 --- [NYEProgenv] [restartedMain] h.n.v.nyeprogenv.NyeProgenvApplication   : Starting NyeProgenvApplication using Java 19.0.1 with PID 13140 (D:\Development\Java\NYEProgenv\target\classes started by VPe in D:\Development\Java\NYEProgenv)
+2024-05-19T17:04:03.256+02:00  INFO 13140 --- [NYEProgenv] [restartedMain] h.n.v.nyeprogenv.NyeProgenvApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-05-19T17:04:03.323+02:00  INFO 13140 --- [NYEProgenv] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-19T17:04:03.323+02:00  INFO 13140 --- [NYEProgenv] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-05-19T17:04:03.325+02:00  INFO 13140 --- [NYEProgenv] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface hu.nye.vpe.nyeprogenv.user.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-05-19T17:04:03.326+02:00  INFO 13140 --- [NYEProgenv] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JDBC repository interfaces.
+2024-05-19T17:04:03.326+02:00  INFO 13140 --- [NYEProgenv] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-19T17:04:03.327+02:00  INFO 13140 --- [NYEProgenv] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-19T17:04:03.329+02:00  INFO 13140 --- [NYEProgenv] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 1 JPA repository interface.
+2024-05-19T17:04:03.367+02:00  INFO 13140 --- [NYEProgenv] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-19T17:04:03.368+02:00  INFO 13140 --- [NYEProgenv] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-19T17:04:03.368+02:00  INFO 13140 --- [NYEProgenv] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-05-19T17:04:03.383+02:00  INFO 13140 --- [NYEProgenv] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-19T17:04:03.383+02:00  INFO 13140 --- [NYEProgenv] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 126 ms
+2024-05-19T17:04:03.390+02:00  WARN 13140 --- [NYEProgenv] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Cannot deserialize session attribute [SPRING_SECURITY_CONTEXT] for session [4F5F5B8ADAC570D35EFEC7203E9C4012]
+2024-05-19T17:04:03.403+02:00  INFO 13140 --- [NYEProgenv] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-19T17:04:03.405+02:00  INFO 13140 --- [NYEProgenv] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-19T17:04:03.407+02:00  INFO 13140 --- [NYEProgenv] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-19T17:04:03.407+02:00  INFO 13140 --- [NYEProgenv] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2024-05-19T17:04:03.418+02:00  INFO 13140 --- [NYEProgenv] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7707b314
+2024-05-19T17:04:03.418+02:00  INFO 13140 --- [NYEProgenv] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2024-05-19T17:04:03.435+02:00  INFO 13140 --- [NYEProgenv] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-19T17:04:03.439+02:00  INFO 13140 --- [NYEProgenv] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-19T17:04:03.479+02:00  INFO 13140 --- [NYEProgenv] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-05-19T17:04:03.502+02:00  INFO 13140 --- [NYEProgenv] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@58d56b7d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@30a23224, org.springframework.security.web.context.SecurityContextHolderFilter@685d8c44, org.springframework.security.web.header.HeaderWriterFilter@573b58c9, org.springframework.web.filter.CorsFilter@1579a504, org.springframework.security.web.csrf.CsrfFilter@466b0423, org.springframework.security.web.authentication.logout.LogoutFilter@697d5506, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5b83c06e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7689d770, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@60b63a99, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@503c9775, org.springframework.security.web.access.ExceptionTranslationFilter@44fa4a62, org.springframework.security.web.access.intercept.AuthorizationFilter@44b75b]
+2024-05-19T17:04:03.535+02:00  INFO 13140 --- [NYEProgenv] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-05-19T17:04:03.540+02:00  INFO 13140 --- [NYEProgenv] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-05-19T17:04:03.542+02:00  INFO 13140 --- [NYEProgenv] [restartedMain] h.n.v.nyeprogenv.NyeProgenvApplication   : Started NyeProgenvApplication in 0.299 seconds (process running for 828.217)
+2024-05-19T17:04:03.543+02:00  INFO 13140 --- [NYEProgenv] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-05-19T17:04:03.600+02:00  INFO 13140 --- [NYEProgenv] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-19T17:04:03.600+02:00  INFO 13140 --- [NYEProgenv] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-19T17:04:03.601+02:00  INFO 13140 --- [NYEProgenv] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-05-19T17:04:03.601+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /login
+2024-05-19T17:04:03.601+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /login
+2024-05-19T17:04:03.616+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-05-19T17:04:05.400+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing POST /login
+2024-05-19T17:04:05.525+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-4] o.s.s.a.dao.DaoAuthenticationProvider    : Authenticated user
+2024-05-19T17:04:05.526+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-4] .s.ChangeSessionIdAuthenticationStrategy : Changed session id from 4F5F5B8ADAC570D35EFEC7203E9C4012
+2024-05-19T17:04:05.526+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-4] o.s.s.w.csrf.CsrfAuthenticationStrategy  : Replaced CSRF Token
+2024-05-19T17:04:05.526+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-4] w.c.HttpSessionSecurityContextRepository : Stored SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=hu.nye.vpe.nyeprogenv.user.CustomUserDetails@24ee3e10, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=4F5F5B8ADAC570D35EFEC7203E9C4012], Granted Authorities=[]]] to HttpSession [org.apache.catalina.session.StandardSessionFacade@2b8f8f31]
+2024-05-19T17:04:05.526+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-4] w.a.UsernamePasswordAuthenticationFilter : Set SecurityContextHolder to UsernamePasswordAuthenticationToken [Principal=hu.nye.vpe.nyeprogenv.user.CustomUserDetails@24ee3e10, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=4F5F5B8ADAC570D35EFEC7203E9C4012], Granted Authorities=[]]
+2024-05-19T17:04:05.526+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-4] o.s.s.web.DefaultRedirectStrategy        : Redirecting to /
+2024-05-19T17:04:05.530+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /
+2024-05-19T17:04:05.530+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /
+2024-05-19T17:04:05.537+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-2] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=hu.nye.vpe.nyeprogenv.user.CustomUserDetails@24ee3e10, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=4F5F5B8ADAC570D35EFEC7203E9C4012], Granted Authorities=[]]]
+2024-05-19T17:04:07.730+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /users
+2024-05-19T17:04:07.730+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-3] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=hu.nye.vpe.nyeprogenv.user.CustomUserDetails@24ee3e10, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=4F5F5B8ADAC570D35EFEC7203E9C4012], Granted Authorities=[]]]
+2024-05-19T17:04:07.730+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /users
+2024-05-19T17:04:09.889+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /login
+2024-05-19T17:04:09.889+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /login
+2024-05-19T17:04:09.896+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-7] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=hu.nye.vpe.nyeprogenv.user.CustomUserDetails@24ee3e10, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=4F5F5B8ADAC570D35EFEC7203E9C4012], Granted Authorities=[]]]
+2024-05-19T17:14:55.524+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing POST /login
+2024-05-19T17:14:55.584+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-8] o.s.s.a.dao.DaoAuthenticationProvider    : Authenticated user
+2024-05-19T17:14:55.585+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-8] .s.ChangeSessionIdAuthenticationStrategy : Changed session id from BB52B4C2C374C0425E9346B21BB9297C
+2024-05-19T17:14:55.585+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-8] o.s.s.w.csrf.CsrfAuthenticationStrategy  : Replaced CSRF Token
+2024-05-19T17:14:55.585+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-8] w.c.HttpSessionSecurityContextRepository : Stored SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=hu.nye.vpe.nyeprogenv.user.CustomUserDetails@10a11994, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BB52B4C2C374C0425E9346B21BB9297C], Granted Authorities=[]]] to HttpSession [org.apache.catalina.session.StandardSessionFacade@2b8f8f31]
+2024-05-19T17:14:55.585+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-8] w.a.UsernamePasswordAuthenticationFilter : Set SecurityContextHolder to UsernamePasswordAuthenticationToken [Principal=hu.nye.vpe.nyeprogenv.user.CustomUserDetails@10a11994, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BB52B4C2C374C0425E9346B21BB9297C], Granted Authorities=[]]
+2024-05-19T17:14:55.585+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-8] o.s.s.web.DefaultRedirectStrategy        : Redirecting to /
+2024-05-19T17:14:55.589+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /
+2024-05-19T17:14:55.590+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /
+2024-05-19T17:14:55.600+02:00 DEBUG 13140 --- [NYEProgenv] [http-nio-8080-exec-9] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=hu.nye.vpe.nyeprogenv.user.CustomUserDetails@10a11994, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BB52B4C2C374C0425E9346B21BB9297C], Granted Authorities=[]]]

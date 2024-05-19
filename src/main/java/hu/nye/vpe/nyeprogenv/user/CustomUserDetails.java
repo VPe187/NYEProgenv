@@ -2,6 +2,7 @@ package hu.nye.vpe.nyeprogenv.user;
 
 import java.util.Collection;
 import java.util.Collections;
+import java.util.stream.Collectors;
 
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -19,7 +20,7 @@ public class CustomUserDetails implements UserDetails {
 
     @Override
     public Collection<?extends GrantedAuthority> getAuthorities() {
-        return Collections.singletonList(new SimpleGrantedAuthority("ROLE_USER"));
+        return null;
     }
 
     @Override
@@ -49,7 +50,7 @@ public class CustomUserDetails implements UserDetails {
 
     @Override
     public boolean isEnabled() {
-        return true;
+        return user.isEnabled();
     }
 
     public String getFullName(

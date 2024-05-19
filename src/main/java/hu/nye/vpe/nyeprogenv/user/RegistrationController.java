@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 
+import java.util.Optional;
+
 /**
  * Registration controller.
  */
@@ -30,7 +32,7 @@ public class RegistrationController {
     public String showRegistrationForm(Model model) {
         model.addAttribute("user", new RegistrationDto());
         model.addAttribute("pageTitle", "Regisztráció");
-        return "register";
+        return "register_form";
     }
 
     /**
@@ -42,7 +44,7 @@ public class RegistrationController {
      */
     @PostMapping("/register")
     public String registerUserAccount(@ModelAttribute("user") RegistrationDto registrationDto) {
-        User existingUser = userRepository.findByEmail(registrationDto.getEmail());
+        Optional<User> existingUser = userRepository.findByEmail(registrationDto.getEmail());
         if (existingUser != null) {
             return "redirect:/register?error";
         }
